@@ -1,4 +1,475 @@
-h1{ 
-    font-style: oblique;
-    color: turquoise;
+body{ 
+    background-color:black;
+    color:white ;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
 }
+
+/* this is the navbar section */
+html{
+    overflow-x: hidden;
+}
+
+.NavBar{
+      background-color: black;
+      height: 55px;
+}
+.hrLine{
+    border: white 0.5px solid;
+    opacity: 0.5;
+    width: 90vw;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    bottom: 0.5vh;
+    left: 315px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 35px;
+    height: 2.5px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 35px;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+ /* The Overlay (background) */
+ .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 100vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left:-100vw;
+    top: 0;
+    z-index: 5;
+    background-color: #1A1A1A; /* Black fallback color */
+    /* background-color: rgba(0,0,0, 0.9); Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 95%;
+    font-weight: 700;
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif; 
+}
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+.mediaIcons{
+    margin-top: 8%;
+    font-size: 1em;
+    margin-left: 10px ;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 10;
+    padding: 8px;  
+}
+.navbar{
+    margin-top:-5%;
+   
+}
+
+/* Content of the home page--------------------------------*/
+ h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+   text-align: center;
+   color: #eb5e28;
+
+}
+.name{
+    position: relative;
+    top: 10%;
+}
+
+ .block{ 
+    margin-top: 40%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 0.1vh;
+}
+.taglineBlock{
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 60vh;
+}
+
+.landingSection{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 900%;
+    font-weight: 200;
+    text-align: center;
+    color: #FFFFFF;
+}
+.para{
+    margin-top: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+   text-align: center;
+   color: #f7931e;
+}
+
+.aboutMe{
+    position: relative;
+    top:10%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 133vh;
+}   
+
+.subHeading{
+    position: relative;
+    top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #f7931e;
+}
+
+.image{
+    margin: 30% 0% 18% 28%;
+    width: 199px;
+    border: 2px solid white;
+    box-shadow: -20px -20px grey;
+}
+.paras{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 1px 40px 10px 40px;
+    text-align: center;
+    color: white;
+}
+
+button{
+    margin: 5% 0% 0% 18%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+
+.btnHeading{
+    position: relative;
+    transform: translateY(0.5vh);
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;   
+}
+.adaGrad{
+    position: relative;
+    top:21%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 115vh;
+}
+
+.logo{
+   margin-top: 26%;
+   text-align: center;
+}
+.gradPara{
+    margin-top:12%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 1px 40px 10px 40px;
+    text-align: center;
+    color: white;  
+}
+.greyBtn{
+    margin-top: 2%;
+    width: 65vw;
+    height: 8vh;
+    padding: 5px 30px 10px 30px;
+    border-radius: 50px;
+    border: none;
+    background: #808080;
+}
+.orangeBtn{
+    margin-top: -2%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+.testimonials{
+    position: relative;
+    top: 30%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 215vh;
+}
+ .card{
+    border:0;
+} 
+
+.card-text{
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+.icons{
+    margin-top: 2%;
+    font-size: 1em;
+    margin-left: 35px ;
+    padding: 8px; 
+
+}
+.names{
+    position: relative;
+    transform: translateY(0.5vh);
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+
+.card-body{
+    background-color: #eb5e28;
+}
+.testiMonial{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+}
+.col{
+    margin-top: 50px;
+}
+.getInTouch{
+    position: relative;
+    top: 40%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 110vh;
+}
+.paras2{
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 1px 40px 10px 40px;
+    text-align: center;
+    color: white;
+}
+.form-control{
+ background-color: #666666;
+}
+
+.orangeBtn1{
+    margin-top: 2%;
+   margin-left: 3%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+
+.footerIcons{
+    position: relative;
+    left:25%;
+    margin-top: 90%;
+    font-size: 1.2em;
+    margin-left: 10px ;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 8px;  
+}
+
+.copy{
+    font-family: 'Montserrat', sans-serif;
+    color:white;   
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2%; 
+    margin-left: 10%;
+}
+ .programmer{
+    font-family: 'Montserrat', sans-serif;
+    color:#f7931e ;
+    font-size: 12px;
+    font-weight: 400;
+} 
+
+
+
+
+
+
+
+
+
+
+/* Media Queries------------------------------------------------ */
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (orientation: landscape) { 
+}
+
+/* // --------------------------------------------------------------Medium devices (tablets) */
+@media (min-width: 768px) {
+}
+
+/* // --------------------------------------------------------------Large devices (ipad pro) */
+@media (min-width: 992px) { 
+   
+}
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+}
+/* --------------------------------------------------------------Extra large devices landscape */
+@media (min-width: 1200px) and (orientation: landscape) { 
+}
+
+/* --------------------------------------------------------------Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Classes
+.hide-on-mobile{
+    display: none;
+}
+
+.block{
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+    text-align: center;
+    background: gray;
+}
+ */
+
+
+/* --------------------------------------------------------------media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) and (orientation: landscape) { 
+} */
+
+/* // --------------------------------------------------------------Medium devices (tablets) */
+/* @media (min-width: 768px) {
+    /* General Classes*/
+/* .mobile-only{
+    display: none;
+}
+.tablet-only{
+    display: block;
+} */ 
+
+/* header section */
+/* .block{
+    height: 20vh;
+} */ 
+
+/* // --------------------------------------------------------------Large devices (ipad pro) */
+/* @media (min-width: 992px) { 
+   
+} */
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { 
+} */
+/* --------------------------------------------------------------Extra large devices landscape */
+/* @media (min-width: 1200px) and (orientation: landscape) {  */
+    /* General classes */
+    /* .tablet-only{
+        display: none;
+    }
+}.desktop-only{
+    display: block;
+} */
+/* header section */
+/* .block{
+    margin-top: 30vh;
+}
+.red-block{
+    background: red;
+    width: 10vw;
+    height: 10vh;
+    margin: auto; */
+/* 
+}
+/* --------------------------------------------------------------Internet Explorer */
+/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+} */
