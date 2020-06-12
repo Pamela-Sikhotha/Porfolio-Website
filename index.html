@@ -28,77 +28,109 @@
 
 
 <body>
-  
+   
+  <!-- Media Icons ----------------------------------------------->
   <div class="media">
     <i class="fab fa-github mediaIcons"></i>
     <i class="fab fa-linkedin-in mediaIcons"></i>
     <i class="far fa-envelope mediaIcons"></i>
     <i class="fas fa-phone mediaIcons"></i>
   </div>
+  
+      <!-- The overlay ----------------------------------------->
+    <div class="NavBar mobile-only">
+      <div id="myNav" class="overlay">
 
-      <!-- The overlay -->
-  <div class="NavBar">
-    <div id="myNav" class="overlay">
-    
       <!-- Button to close the overlay navigation -->
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
-      <!-- Overlay content -->
+
+    <!-- Overlay content ---------------------------------------->
       <div class="overlay-content">
         <a href="index.html">home</a>
         <a href="aboutMe.html">about me</a>
         <a href="journey.html">journey</a>
         <a href="resume.html">resume</a>
         <a href="getInTouch.html">get in touch</a>
-       
+      </div>
     </div>
-  </div>
 
-  <div class="navbar-brand col-4 navbar" id="menuToggle">  
-      
-      <!-- Use any element to open/show the overlay navigation menu -->
-        <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-        <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-        <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-   </div>
-</div>
+    <div class="navbar-brand col-4 navbar" id="menuToggle">  
 
-  
+    <!-- Use any element to open/show the overlay navigation menu -->
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    </div>
+    </div>
+
+
     <div class="name">
         <h1 >P A M E L A</h1>
         <hr class="hrLine">
     </div>
-  
-   
+
+    <!-- Desktop NavBar ---------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-white desktop-only desktopNavbar">
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><strong class="navigation1">HOME</strong> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutMe.html"> <strong class="navigation">ABOUT ME</strong> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="journey.html"><strong class="navigation">JOURNEY</strong> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html"><strong class="navigation">RESUME</strong> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="getInTouch.html"><strong class="navigation">GET IN TOUCH</strong></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<!---Landing Page---------------------------------->
+
    
     <div class="block"></div>
+      <div class="taglineBlock">
+         
+          <h2 class="landingSection text-secondary" >{ <span style="color:white">  HI </span>}</h2>
+          <p class="para text-secondary">&lt;p&gt;<span style="color:#f7931e;"> I'm a Front-End Web Developer & passionate coder</span> &lt;/p&gt;</p>
 
-    <div class="taglineBlock">
-        <h2 class="landingSection">{HI}</h2>
-        <p class="para">I'm a Front-End Web Developer & passionate coder</p>
-    </div>
+          <div class="arrowDiv"><p class="arrow">&#x2193;</p></div>
+        
+      </div>
 
     <div class="aboutMe">
-        <h2 class="subHeading">About Me</h2>
+     <h2 class="subHeading">About Me</h2>
         
-        <div class="image">
-            <img src="assets/images/PamelaHeadshot.jpg" alt="image" width="195px" >
-        </div>
-       <div class="paras">
+      <div class="imageDiv">
+          <img src="assets/images/PamelaHeadshot.jpg" class="image" alt="image">
+      </div>
+      <div class="paras">
            <p>I am a Junior Front-end Web developer based in South Africa. My passion lies in using technology for social change, building things that matter, and a better world, like creating innovative technologies, creating systems, or products that are useful and that have economic benefits in the digital economy. 
             
             <br><br>
 
             I also love design because it helps me dream up creative concepts that take advantage of my surroundings for extraordinary results, creating beautiful artwork and lettering. I find painting and lettering to be both fun and also incredibly therapeutic, allowing me to calm my mind by focusing on each pen or brush stroke. 
             </p>
-       </div>
+      </div>
 
-       <button><h3 class="btnHeading">more about me</h3></button>
+       <button class="mobile-only"><h3 class="btnHeading mobile-only">more about me</h3></button>
      
     </div>
    
     <div class="adaGrad">
-        <h2 class="subHeading">I am an ADA graduate!</h2>
+      <h2 class="subHeading">I am an ADA graduate!</h2>
         <div class="logo">
             <img src="assets/images/ada-logo.jpg" alt="logo"  width="208px" height="150px">
         </div>
@@ -116,119 +148,108 @@
         
     </div>
     
-<!---this is the testimonial section--------------------------------------->
+<!---this is the testimonial section------------------------------->
 
- <div class="testimonials">
-    <h2 class="subHeading">Testimonials</h2>
+    <div class="testimonials">
+      <h2 class="subHeading">Testimonials</h2>
 
-    <br><br><br>
+      <br><br><br>
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-
-          <div class="card" style="width: 100%; height: 100%;">
-            <img src="assets/images/ADA logo.png" class="card-img-top" alt="logo">
-            <div class="card-body">
-              <div>
-                <i class="fab fa-linkedin-in icons"></i>
+      <div class="container">
+        <div class="row firstRow">
+          <div class="col testiDivs">
+            <div class="card">
+              <img src="assets/images/ADA logo.png" class="card-img-top adaImage" alt="logo">
+              <div class="card-body orangeDiv">
+                <div>
+                  <i class="fab fa-linkedin-in icons"></i>
+                </div>
+                <p class="card-text contactDiv">CONTACT ADA</p>
               </div>
-              <p class="card-text">CONTACT ADA</p>
+            </div>
+          </div>
+          <div class="col">
+            <p class="testiMonial firstRowText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros.
+            <br>
+            <strong class="names">- ADA</strong>
+            </p>
+          </div>
+
+          <div class="w-100"></div>
+            <br>
+          <div class="col testiDivs">
+            <div class="card" >
+              <img src="assets/images/lauraSeal.jpg" class="card-img-top lectureImage" alt="image">
+              <div class="card-body orangeDiv">
+                <div>
+                  <i class="fab fa-linkedin-in icons"></i>
+                </div>
+                <p class="card-text contactDiv">CONTACT LAURA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <p class="testiMonial  firstRowText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros.
+            <br> 
+            <strong class="names">- Laura Seal</strong>
+            </p>
+          </div>
+        </div>
+        
+        <div class="row secondRow">
+
+          <div class="col testiDivs">
+            <div class="card" >
+              <img src="assets/images/andreaHayes.jpg" class="card-img-top lectureImage" alt="image">
+              <div class="card-body orangeDiv">
+                <div>
+                  <i class="fab fa-linkedin-in icons"></i>
+                </div>
+                <p class="card-text contactDiv">CONTACT ANDREA</p>
+              </div>
             </div>
           </div>
 
-
-        </div>
-        <div class="col">
-          <p class="testiMonial"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros.
+          <div class="col">
+            <p class="testiMonial"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros.
             <br> 
-            <h3 class="names">- ADA</h3>
-          </p>
-        </div>
-
-        <div class="w-100"></div>
-         <br>
-        <div class="col">
-
-          <div class="card" style="width: 100%; height: 100%;">
-            <img src="assets/images/lauraSeal.jpg" class="card-img-top" alt="image">
-            <div class="card-body">
-              <div>
-                <i class="fab fa-linkedin-in icons"></i>
-              </div>
-              <p class="card-text">CONTACT LAURA</p>
-            </div>
+            <strong class="names">- Andrea Hayes</strong>
+            </p>
           </div>
 
-        </div>
-        <div class="col">
-         
-          <p class="testiMonial"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros.
-            <br> 
-            <h3 class="names">- Laura Seal</h3>
-          </p>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-
-        <div class="col">
-
-          <div class="card" style="width: 100%; height: 100%;">
-            <img src="assets/images/andreaHayes.jpg" class="card-img-top" alt="image">
-            <div class="card-body">
-              <div>
-                <i class="fab fa-linkedin-in icons"></i>
+          <div class="w-100"></div>
+        
+          <div class="col testiDivs">
+            <div class="card">
+              <img src="assets/images/kateMarsay.jpg" class="card-img-top lectureImage" alt="image">
+              <div class="card-body orangeDiv">
+                <div>
+                  <i class="fab fa-linkedin-in icons"></i>
+                </div>
+                <p class="card-text contactDiv">CONTACT KATE</p>
               </div>
-              <p class="card-text">CONTACT ANDREA</p>
             </div>
           </div>
-
-        </div>
-        <div class="col">
-         
-          <p class="testiMonial"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros.
+          <div class="col">
+            <p class="testiMonial"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros.
             <br> 
-          <h3 class="names">- Andrea Hayes</h3>
-          </p>
-        </div>
-
-        <div class="w-100"></div>
-
-        <div class="col">
-  
-          <div class="card" style="width: 100%; height: 100%;">
-            <img src="assets/images/kateMarsay.jpg" class="card-img-top" alt="image">
-            <div class="card-body">
-              <div>
-                <i class="fab fa-linkedin-in icons"></i>
-              </div>
-              <p class="card-text">CONTACT KATE</p>
-            </div>
+            <strong class="names">- Kate Marsay</strong>
+            </p>
           </div>
-
-        </div>
-        <div class="col">
-
-          <p class="testiMonial"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros.
-            <br> 
-            <h3 class="names">- Kate Marsay</h3>
-          </p>
         </div>
       </div>
     </div>
 
- </div>
+  <!--Get In Touch------------------------------------------------->
 
    <div class="getInTouch">
     <h2 class="subHeading">Get In touch!</h2>
-    <div class="paras2">
+     <div class="paras2">
       <p> 
        Have any questions? Let me know by sending me a message! I’ll get back to you as soon as possible. Would love to hear from you.
        </p>
 
        <form>
-
         <div class="form-group">
           <label for="FormControlInput1">fullName</label>
           <input type="fullName" class="form-control" id="FormControlInput1" placeholder="Your name">
@@ -239,7 +260,6 @@
           <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com">
         </div>
       
-       
         <div class="form-group">
           <label for="FormControlTextarea1">Your message</label>
           <textarea class="form-control" id="FormControlTextarea1" rows="6"></textarea>
@@ -251,13 +271,15 @@
     </div>
   </div>
 
+  <!--Footer------------------------------------------------->
+  
   <div class="media">
     <i class="fab fa-github footerIcons"></i>
     <i class="fab fa-linkedin-in footerIcons"></i>
     <i class="far fa-envelope footerIcons"></i>
     <i class="fas fa-phone footerIcons"></i>
   </div>
-  <p class="copy">Copyright © 2020, made by<h3 class="programmer">Pamela Sikhotha</h3></p>
+  <p class="copy">Copyright © 2020, made by <strong class="programmer">Pamela Sikhotha</strong></p>
   <br><br>
  
 
@@ -338,22 +360,7 @@
 
 
 
-   <!-- <div class="block">
-        <h2 class="landingSection">{HI}</h2>
-        <p class="para">I'm a Front-End Web Developer & passionate coder</p>
-   </div>
-        
-  <div class="aboutMe">
-      <h2 class="subHeading">About Me</h2>
-      <div class="headshot">
-          
-      </div>
-      
-      <div class="image">
-        <img src="assets/images/PamelaHeadshot.jpg" alt="image">
-      </div>    
-
-  </div> -->
+  
 
 
 
@@ -370,23 +377,7 @@
 
 
 
-
-    <!-- <div class="portfolio">
-        <h1 class="mobile-only">little logo</h1>
-        <h2 class="hide-on-mobile desktop-only">big logo</h2>
-    </div>
-
-<div class="block">
-    <h1>Hi,I'm Pamela</h1>
-    <p class="mobile-only">you are on a phone </p>
-    <p class="hide-on-mobile tablet-only">you are on a ipad  </p>
-    <p class="hide-on-mobile desktop-only">you are on a computer</p>
-</div>
-
-<div class="red-block hide-on-mobile desktop-only">x</div>
-
-<div><i class="fas fa-cat"></i>
-</div> -->
+  
 
 
     

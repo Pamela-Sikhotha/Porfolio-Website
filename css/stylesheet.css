@@ -30,7 +30,9 @@ html{
     -webkit-user-select: none;
     user-select: none;
 }
-
+.arrow{
+    display: none;
+}
 #menuToggle span {
     display: block;
     width: 35px;
@@ -102,10 +104,17 @@ html{
 }
 .navbar{
     margin-top:-5%;
-   
 }
 
-/* Content of the home page--------------------------------*/
+/* desktop navbar */
+
+.desktopNavbar{
+    display: none;
+}
+
+
+
+/* Content of the home page-------------------------------------------*/
  h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -152,9 +161,8 @@ html{
     top:10%;
     background-color:#1A1A1A;
     width: 100vw;
-    height: 133vh;
+    height: 130vh;
 }   
-
 .subHeading{
     position: relative;
     top: 4%;
@@ -164,7 +172,6 @@ html{
     text-align: center;
     color: #f7931e;
 }
-
 .image{
     margin: 30% 0% 18% 28%;
     width: 199px;
@@ -236,6 +243,8 @@ button{
     border: none;
     background:  #eb5e28;
 }
+
+/* testimonials ************************************/
 .testimonials{
     position: relative;
     top: 30%;
@@ -245,10 +254,10 @@ button{
 }
  .card{
     border:0;
+    background-color:#1A1A1A;
 } 
 
 .card-text{
-    font-weight: 400;
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -285,6 +294,10 @@ button{
 .col{
     margin-top: 50px;
 }
+
+/* Get In TOuch**********************************************/
+
+
 .getInTouch{
     position: relative;
     top: 40%;
@@ -332,23 +345,19 @@ button{
     font-size: 12px;
     font-weight: 400;
     margin-top: 2%; 
-    margin-left: 10%;
+    margin-left: 14%;
 }
  .programmer{
     font-family: 'Montserrat', sans-serif;
-    color:#f7931e ;
+    color:#f7931e;
     font-size: 12px;
     font-weight: 400;
 } 
 
-
-
-
-
-
-
-
-
+/* General Classes*/
+.hide-on-mobile{
+    display: none;
+}
 
 /* Media Queries------------------------------------------------ */
 
@@ -358,27 +367,304 @@ button{
 
 /* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (orientation: landscape) { 
+    
 }
 
 /* // --------------------------------------------------------------Medium devices (tablets) */
 @media (min-width: 768px) {
+    .desktopNavbar{
+        display: none;
+    }
+    
 }
-
 /* // --------------------------------------------------------------Large devices (ipad pro) */
 @media (min-width: 992px) { 
+   
    
 }
 
 /* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    
 }
 /* --------------------------------------------------------------Extra large devices landscape */
 @media (min-width: 1200px) and (orientation: landscape) { 
+    .mobile-only{
+        display: none;
+    }
+    .desktopNavbar{
+        position: relative;
+        left: 25%;
+        margin-top:-3%;
+        display: block;
+    }
+    .nav-link{
+        color: white;
+        margin-left: 50px;
+    }
+    .navigation{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+       /* text-align: center; */
+       color: white;
+
+    }
+    .navigation1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+       color: white;
+    }
+    .taglineBlock{
+        position: relative;
+        top:-75%;
+        left: 75px;
+        background-color:#1A1A1A;
+        width: 90vw;
+        height: 60vh;
+    }
+    .para{
+        margin-top: 5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+       text-align: center;
+       color: #f7931e;
+    }
+    .aboutMe{
+        position: relative;
+        top:-62%;
+        left: 75px;
+        background-color:#1A1A1A;
+        width: 90vw;
+        height: 70vh;
+    }   
+    .image{
+        margin: 8% 0% 18% 9%;
+        width: 303px;
+        height: 303px;
+        box-shadow: -40px -40px grey;
+    }
+    .paras{
+        position: relative;
+        margin-top: -40%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        padding: 1px 40px 10px 40px;
+        width: 50vw;
+        height: 80vh;
+        left:500px;
+        color: white;
+    }
+    
+    .orangeBtn1{
+        margin-top: 2%;
+       margin-left: 3%;
+        width: 5vw;
+        height: 8vh;
+        border-radius: 50px;
+        border: none;
+        background:  #eb5e28;
+    }
+    .mediaIcons{
+        position: relative;
+        left:85%;
+        margin-top: 4%;
+        font-size: 1.5em;
+        margin-left: 10px ;
+        border-radius: 50%;
+        border: 1px solid white;
+        z-index: 10;
+        padding: 8px;  
+    }
+    .name{
+        position: relative;
+        top: -4.5%;
+    }
+    .adaGrad{
+        position: relative;
+        top:-49%;
+        left: 75px;
+        background-color:#1A1A1A;
+        width: 90vw;
+        height: 70vh;
+    }
+    .logo{
+        margin-top: 8%;
+        margin-right: 68%;
+        height: 68px;
+        text-align: center;
+     }
+     .gradPara{
+         position: relative;
+        margin-top:-5%;
+        width:50%;
+        left: 492px;
+        font-size: 21px;
+        font-weight: 200;
+        /* padding: 1px 40px 10px 40px; */
+        text-align: center;
+        color: white;  
+    }
+    .greyBtn{
+        margin-top: 2%;
+        margin-left: 38%;
+        width: 15vw;
+        height: 6vh;
+       
+    }
+    .orangeBtn{
+        margin-top: -4.9%;
+        margin-left: 57%;
+        width: 15vw;
+        height: 6vh;
+    }
+    /* testimonial content*********************** */
+    .testimonials{
+        top: -35%;
+        left: 75px; 
+        width: 90vw;
+        height: 115vh;
+    }
+    .testiMonial{
+        margin-left: -22vw;
+        width: 20vw;
+    }
+    .firstRow{
+        margin-left: -5vw;
+    }
+    .secondRow{
+        
+        transform: translate(40vw,-84vh);
+    }
+    .firstRowText{
+        margin-left: -22vw;
+    }
+      /* .col{ 
+        width: 60%;
+        height:60px;
+    }   */
+    .lectureImage{
+        width: 10vw;
+        height: 18vh;
+    }
+    .adaImage{
+        width: 10vw;
+        height: 15vh;
+    }
+    .orangeDiv{
+        width: 10vw;
+        height: 15vh;
+    }
+    .testiDivs{
+        margin-bottom: 20px;
+    }
+    
+    h1{
+       position: relative;
+        top: -2%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 45.5px;
+        font-weight: 500;
+       text-align: center;
+       color: #eb5e28;
+    }
+    .hrLine{
+        margin-top: 85px;
+        /* border: white 0.01px solid; */
+        opacity: 0.5;
+        width: 90vw;
+    }
+     .block{ 
+        margin-top: 40%;
+        background-color:#1A1A1A;
+        width: 100vw;
+        height: 0.1vh;
+    }
+    .arrow{
+        width:40px;
+        height:60px;
+        display: block;
+        font-size: 2em;
+        border-radius: 50px;
+        border: 1px solid grey;
+        margin-left: 42vw;
+        padding: 10px;
+        color: grey;
+    }
+
+    /* Get In Touch ***************************************************/
+
+    .getInTouch{
+       margin-left: 75px;
+        top: -25%;
+        width: 90vw;
+        height: 90vh;
+    }
+    form{
+        margin-left: 15%;
+        width:70%; 
+    }
+    .paras2{
+        font-size: 15px;
+        font-weight: 200;
+        
+    }
+    .orangeBtn1{
+        margin-top: 2%;
+        margin-left: 3%;
+        width: 15vw;
+        height: 8vh; 
+    }
+    .footerIcons{
+        position: relative;
+        left:45%;
+        margin-top: -5%;
+        font-size: 1.5em;
+    }
+    .copy{
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: -2%; 
+        margin-left: 42%;
+    }
+     .programmer{
+        font-size: 15px;
+        font-weight: 400;
+    } 
 }
 
 /* --------------------------------------------------------------Internet Explorer */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -403,73 +689,3 @@ button{
 
 
 
-/* General Classes
-.hide-on-mobile{
-    display: none;
-}
-
-.block{
-    width: 90vw;
-    height: 60vh;
-    margin: auto;
-    text-align: center;
-    background: gray;
-}
- */
-
-
-/* --------------------------------------------------------------media queries */
-
-/* // Extra small devices (portrait phones, less than 576px) */
-/* // No media query for `xs` since this is the default in Bootstrap */
-
-/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) and (orientation: landscape) { 
-} */
-
-/* // --------------------------------------------------------------Medium devices (tablets) */
-/* @media (min-width: 768px) {
-    /* General Classes*/
-/* .mobile-only{
-    display: none;
-}
-.tablet-only{
-    display: block;
-} */ 
-
-/* header section */
-/* .block{
-    height: 20vh;
-} */ 
-
-/* // --------------------------------------------------------------Large devices (ipad pro) */
-/* @media (min-width: 992px) { 
-   
-} */
-
-/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { 
-} */
-/* --------------------------------------------------------------Extra large devices landscape */
-/* @media (min-width: 1200px) and (orientation: landscape) {  */
-    /* General classes */
-    /* .tablet-only{
-        display: none;
-    }
-}.desktop-only{
-    display: block;
-} */
-/* header section */
-/* .block{
-    margin-top: 30vh;
-}
-.red-block{
-    background: red;
-    width: 10vw;
-    height: 10vh;
-    margin: auto; */
-/* 
-}
-/* --------------------------------------------------------------Internet Explorer */
-/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-} */
