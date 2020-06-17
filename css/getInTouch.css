@@ -1,0 +1,315 @@
+body{ 
+    background-color:black;
+    font-size: 2em;
+    color:white ;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+}
+
+/* this is the navbar section */
+html{
+    overflow-x: hidden;
+}
+
+/* general styles */
+.hide-on-mobile{
+    display: none;
+}
+
+/* menu */
+.menu{
+    float: right;
+}
+
+/* Social Icons */ 
+.mediaIcons{
+    display: inline-block;
+    margin-top: -4%;
+    font-size: 0.8em;
+    margin-left: 5px ;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 50;
+    padding: 8px;  
+}
+.NavbarIcon{
+    margin-top: 2%;
+    margin-left: 15px;
+    text-align: center;
+    float: right;
+    font-size: 0.8em;
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 6px 1px 1px 1px; 
+}
+.closebtnIcon{
+    float: right;
+}
+/* desktop navbar */
+.desktopNavbar{
+    display: none;
+}
+.navbar{
+    margin-top:-5%;
+}
+.NavBar{
+    background-color: black;
+    height: 55px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+   text-align: center;
+   color: #eb5e28;
+}
+.container-fluid{
+    background: black;
+}
+.hrLine{
+    border: white 0.5px solid;
+    opacity: 0.5;
+    width: 90vw;
+}
+.row{
+    background:black;
+}
+.col-sm-12{
+    background: black;
+    border: 1px solid white;
+}
+#menuToggle {
+    display: block;
+    position: relative;
+    bottom: 0.5vh;
+    left: 315px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.arrow{
+    display: none;
+}
+#menuToggle span {
+    display: block;
+    width: 35px;
+    height: 2.5px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 35px;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+ /* The Overlay (background) */
+ .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 100vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left:-100vw;
+    top: 0;
+    z-index: 5;
+    background-color: #1A1A1A; /* Black fallback color */
+    /* background-color: rgba(0,0,0, 0.9); Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 95%;
+    font-weight: 700;
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif; 
+}
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  /* landing section */
+  .taglineBlock{
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 60vh;
+}
+.landingSection{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 145px;
+    font-weight: 200;
+    text-align: center;
+    color: #FFFFFF;
+}
+.para{
+    margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+   text-align: center;
+   color: #f7931e;
+}
+
+
+
+
+/* --------------------------------------------------------------media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* // --------------------------------------------------------------Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+ }
+
+/* // --------------------------------------------------------------Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* general styles */
+    .show-on-desktop{
+        display: block;
+    }
+    .hide-on-desktop{
+        display: none;
+    }
+    .desktop-only{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+
+    /* social Icons******************************/
+    .social-icons{
+        text-align: center;
+    }
+    .icons{
+        margin-top: 4%;
+    }
+    .mediaIcons{
+        margin-top: -5%;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: 500;
+    }
+ }
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+/* --------------------------------------------------------------Extra large devices landscape */
+ @media (min-width: 1200px) and (orientation: landscape) {
+    .show-on-desktop{
+        display: block;
+    }
+    .hide-on-desktop{
+        display: none;
+    }
+    .desktop-only{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+
+    /* social Icons******************************/
+    .social-icons{
+        text-align: center;
+    }
+    .icons{
+        margin-top: 4%;
+    }
+    .mediaIcons{
+        margin-top: -5%;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: 500;
+    } 
+    .desktopNavbar{
+        position: relative;
+        left: 25%;
+        margin-top:4%;
+        display: block;
+    }
+    .nav-link{
+        color: white;
+        margin-left: 50px;
+    }
+    .navigation{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+       /* text-align: center; */
+       color: white;
+
+    }
+    .navigation1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+       color: white;
+    }
+    
+    .taglineBlock{
+        background-color:#1A1A1A;
+        width: 100vw;
+        height: 60vh;
+    }
+    
+    .landingSection{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 900%;
+        font-weight: 200;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .para{
+        margin-top: 20%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 100%;
+        font-weight: 700;
+       text-align: center;
+       color: #f7931e;
+    }
+    
+
+ }
+
+
+ /* --------------------------------------------------------------Internet Explorer */
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+
+ }

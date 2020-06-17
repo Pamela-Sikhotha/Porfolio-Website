@@ -105,15 +105,10 @@ html{
 .navbar{
     margin-top:-5%;
 }
-
 /* desktop navbar */
-
 .desktopNavbar{
     display: none;
 }
-
-
-
 /* Content of the home page-------------------------------------------*/
  h1{
     font-family: 'Montserrat', sans-serif;
