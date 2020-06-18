@@ -290,8 +290,20 @@ button{
     margin-top: 50px;
 }
 
-/* Get In TOuch**********************************************/
+/* Get In Touch**********************************************/
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: 1 !important; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white !important;
+  }
 
 .getInTouch{
     position: relative;

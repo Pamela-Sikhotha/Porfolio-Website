@@ -26,21 +26,21 @@ html{
 .mediaIcons{
     display: inline-block;
     margin-top: -4%;
-    font-size: 0.8em;
-    margin-left: 5px ;
+    font-size: 0.6em;
+    margin-left: 1px;
     border-radius: 50%;
     border: 1px solid white;
     z-index: 50;
     padding: 8px;  
 }
 .NavbarIcon{
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 15px;
     text-align: center;
     float: right;
-    font-size: 0.8em;
-    width: 40px;
-    height: 40px; 
+    font-size: 0.6em;
+    width: 35px;
+    height: 35px; 
     border-radius: 50%;
     border: 1px solid white;
     padding: 6px 1px 1px 1px; 
@@ -59,16 +59,16 @@ html{
     background-color: black;
     height: 55px;
 }
-h1{
+h1{ margin-top: 20%;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 500;
    text-align: center;
    color: #eb5e28;
 }
-.container-fluid{
+/* .container-fluid{
     background: black;
-}
+} */
 .hrLine{
     border: white 0.5px solid;
     opacity: 0.5;
@@ -79,7 +79,7 @@ h1{
 }
 .col-sm-12{
     background: black;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 #menuToggle {
     display: block;
@@ -153,11 +153,12 @@ h1{
     font-size: 60px;
   }
 
-  /* landing section */
+  /* landing section *******************/
   .taglineBlock{
+      margin-top: 24%;
     background-color:#1A1A1A;
     width: 100vw;
-    height: 60vh;
+    height: 58vh;
 }
 .landingSection{
     font-family: 'Montserrat', sans-serif;
@@ -174,11 +175,91 @@ h1{
    text-align: center;
    color: #f7931e;
 }
+/* About me section**************************/
+ .aboutMe{
+    background-color:#1A1A1A !important;
+    width: 90vw;
+    margin-left: 5%;
+}    
+.subHeading{
+    position: relative;
+    top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #f7931e;
+}
+.image{
+    margin: 23% 10% 18% 16%;
+    width: 199px;
+    border: 2px solid white;
+    box-shadow: -20px -20px grey;
+}
+.paras{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    padding: 1px 40px 10px 40px;
+    text-align: center;
+    color: white;
+}
+button{
+    margin: 1% 2% 1% 15%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+.btnHeading{
+    position: relative;
+    transform: translateY(0.5vh);
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;   
+}
+
+ /* ADA Graduate section**********************************/
+ .logo{
+    margin: 20% 2% 18% 2%;
+    width: 200px;
+    height: 200px;
+ }
+ .gradPara{
+     margin-top:12%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 13px;
+     font-weight: 200;
+     padding: 1px 40px 10px 40px;
+     text-align: center;
+     color: white;  
+ }
+ .greyBtn{
+     margin-top: 2%;
+     width: 65vw;
+     height: 8vh;
+     padding: 5px 30px 10px 30px;
+     border-radius: 50px;
+     border: none;
+     background: #808080;
+ }
+ .orangeBtn{
+     margin-top: -2%;
+     width: 65vw;
+     height: 8vh;
+     border-radius: 50px;
+     border: none;
+     background:  #eb5e28;
+ }
 
 
 
 
-/* --------------------------------------------------------------media queries */
+
+/* --MEDIA QUERIES------------------------------------------------------------media queries */
 
 /* // Extra small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
@@ -190,39 +271,138 @@ h1{
 
 /* // --------------------------------------------------------------Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    /* general styles */
+ .show-on-desktop{
+    display: block;
+}
+.hide-on-desktop{
+    display: block;
+}
+.desktop-only{
+    display: block;
+}
+.menu{
+    display: none;
+}
+
+/* social Icons******************************/
+.social-icons{
+    text-align: center;
+}
+.icons{
+    margin-top: 4%;
+}
+/* .mediaIcons{
+    position: relative;
+    right: 180px;
+    font-size: 1.3em;
+    margin-left: 20px;
+    top: 20%;
+}  */
+.NavbarIcon{
+    margin-top: 1%;
+    margin-right: 15px;
+    font-size: 1.3em;
+    width: 60px;
+    height: 60px; 
+}
+
+/*Landing page************************************/
+
+h1{ margin-bottom: 20%;
+    font-size: 40px;
+    font-weight: 500;
+}
+.taglineBlock{
+    margin-top: 6%;
+    width: 90vw;
+    height: 40vh;
+}
+.landingSection{
+    margin-top: 5%;
+    font-size: 160px;
+    font-weight: 200;
+}
+.para{
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: 500;
+}
+.arrow{
+    display: block;
+    margin-left: 42vw;
+    width:40px;
+    height:60px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    border: 1px solid grey;
+    padding: 1px 1px 1px 10px ;
+    color: grey;
+}
+/* About Me Section *******************************************************/
+/* .aboutMe{
+    position: relative;
+    top:-62%;
+    left: 75px;
+    background-color:#1A1A1A;
+    width: 90vw;
+    height: 70vh;
+}    */
+.image{
+    margin: 20% 0% 18% 2%;
+    width: 303px;
+    height: 303px;
+    box-shadow: -40px -40px grey;
+}
+.paras{
+    margin-top: 7%;
+    font-size: 20px;
+    font-weight: 100;
+    /* padding: 1px 40px 10px 40px; */
+    /* width: 50vw;
+    height: 80vh; */
+    /* left:500px; */
+    color: white;
+}
+button{
+    margin: 1% 2% 1% 15%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+.btnHeading{
+    position: relative;
+    transform: translateY(0.5vh);
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;   
+}
+
+.orangeBtn1{
+    margin-top: 2%;
+   margin-left: 3%;
+    width: 5vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+
+.name{
+    position: relative;
+    top: -4.5%;
+}
 
  }
 
 /* // --------------------------------------------------------------Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    /* general styles */
-    .show-on-desktop{
-        display: block;
-    }
-    .hide-on-desktop{
-        display: none;
-    }
-    .desktop-only{
-        display: block;
-    }
-    .menu{
-        display: none;
-    }
+ 
 
-    /* social Icons******************************/
-    .social-icons{
-        text-align: center;
-    }
-    .icons{
-        margin-top: 4%;
-    }
-    .mediaIcons{
-        margin-top: -5%;
-    }
-    h1{
-        font-size: 45px;
-        font-weight: 500;
-    }
  }
 
 /* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
@@ -231,6 +411,7 @@ h1{
  }
 /* --------------------------------------------------------------Extra large devices landscape */
  @media (min-width: 1200px) and (orientation: landscape) {
+     /* general styles */
     .show-on-desktop{
         display: block;
     }
@@ -251,13 +432,18 @@ h1{
     .icons{
         margin-top: 4%;
     }
-    .mediaIcons{
-        margin-top: -5%;
-    }
+     
+     .mediaIcons{
+        font-size: 0.6em;
+        margin-left: 1px;
+        margin-top: 5%;
+    } 
     h1{
         font-size: 45px;
         font-weight: 500;
     } 
+
+    /* Navigation************************************/
     .desktopNavbar{
         position: relative;
         left: 25%;
@@ -281,28 +467,120 @@ h1{
         font-size: 20px;
        color: white;
     }
-    
+    h1{ margin-top: 2%;
+        font-size: 40px;
+        font-weight: 500;
+    }
     .taglineBlock{
-        background-color:#1A1A1A;
-        width: 100vw;
+        margin-top: 6%;
+        width: 90vw;
         height: 60vh;
     }
-    
     .landingSection{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 900%;
+        margin-top: 5%;
+        font-size: 160px;
         font-weight: 200;
-        text-align: center;
-        color: #FFFFFF;
     }
     .para{
-        margin-top: 20%;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 100%;
-        font-weight: 700;
-       text-align: center;
-       color: #f7931e;
+        margin-top: 5%;
+        font-size: 25px;
+        font-weight: 500;
     }
+    .arrow{
+        display: block;
+        margin-left: 42vw;
+        width:40px;
+        height:60px;
+        font-size: 1.2em;
+        border-radius: 50px;
+        border: 1px solid grey;
+        padding: 1px 1px 1px 10px ;
+        color: grey;
+    }
+    /* About Me Section *******************************************************/
+    /* .aboutMe{
+        position: relative;
+        top:-62%;
+        left: 75px;
+        background-color:#1A1A1A;
+        width: 90vw;
+        height: 70vh;
+    }    */
+    .image{
+        margin: 20% 0% 18% 2%;
+        width: 303px;
+        height: 303px;
+        box-shadow: -40px -40px grey;
+    }
+    .paras{
+        margin-top: 7%;
+        font-size: 20px;
+        font-weight: 100;
+        /* padding: 1px 40px 10px 40px; */
+        /* width: 50vw;
+        height: 80vh; */
+        /* left:500px; */
+        color: white;
+    }
+    button{
+        margin: 1% 2% 1% 15%;
+        width: 65vw;
+        height: 8vh;
+        border-radius: 50px;
+        border: none;
+        background:  #eb5e28;
+    }
+    .btnHeading{
+        position: relative;
+        transform: translateY(0.5vh);
+        left: 0.5%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: white;   
+    }
+    
+    .orangeBtn1{
+        margin-top: 2%;
+       margin-left: 3%;
+        width: 5vw;
+        height: 8vh;
+        border-radius: 50px;
+        border: none;
+        background:  #eb5e28;
+    }
+    
+    .name{
+        position: relative;
+        top: -4.5%;
+    }
+
+     /* ADA Graduate section**********************************/
+    .logo{
+        margin: 20% 0% 18% 2%;
+        width: 303px;
+        height: 300px;
+     }
+     .gradPara{
+         font-size: 13px;
+         font-weight: 200;
+         
+     }
+     .greyBtn{
+         margin-top: 5%;
+         margin-left: 2%;
+         width: 20vw;
+         height: 8vh;
+     }
+     .orangeBtn{
+         margin-top: 5%;
+         margin-left: 2%;
+         width: 20vw;
+         height: 8vh;
+     }
+
+     /*Testimonials  */
+
     
 
  }
