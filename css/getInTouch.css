@@ -30,7 +30,8 @@ html{
     margin-left: 1px;
     border-radius: 50%;
     border: 1px solid white;
-    z-index: 50;
+    position: relative;
+    z-index: 50 !important;
     padding: 8px;  
 }
 .NavbarIcon{
@@ -75,11 +76,11 @@ h1{ margin-top: 20%;
     width: 90vw;
 }
 .row{
-    background:black;
+    background:#1A1A1A;
 }
 .col-sm-12{
-    background: black;
-    /* border: 1px solid white; */
+    background:#1A1A1A !important;
+    border: 1px solid white;
 }
 #menuToggle {
     display: block;
@@ -254,6 +255,135 @@ button{
      border: none;
      background:  #eb5e28;
  }
+ /* testimonials section */
+ .testimonials{
+    position: relative;
+    top: 10%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 215vh;
+}
+ .card{
+     margin: 7% 0% 15% 5%;
+    border:0;
+    background-color:#1A1A1A;
+} 
+
+.card-text{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+.icons{
+    margin-top: 2%;
+    font-size: 1em;
+    /* margin-left: 35px ; */
+    padding: 8px; 
+
+}
+.names{
+    position: relative;
+    transform: translateY(0.5vh);
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+
+.card-body{
+    background-color: #eb5e28;
+}
+.testiMonial{
+    margin-top: 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+}
+.col{
+    margin-top: 50px;
+}
+a{
+    color:white;
+}
+/* Get In Touch**********************************************/
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: 1 !important; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white !important;
+  }
+
+.getInTouch{
+    margin-top: 39%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 90vh;
+}
+.paras2{
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 1px 40px 10px 40px;
+    text-align: center;
+    color: white;
+}
+.form-control{
+ background-color: #666666;
+}
+
+.orangeBtn1{
+    margin: 2% 0% 0% 3%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+
+/* Footer*******************/
+.footerIcons{
+    position: relative;
+    left:25%;
+    margin-top: 90%;
+    font-size: 1.2em;
+    margin-left: 10px ;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 8px;  
+}
+
+.copy{
+    font-family: 'Montserrat', sans-serif;
+    color:white;   
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2%; 
+    margin-left: 14%;
+}
+ .programmer{
+    font-family: 'Montserrat', sans-serif;
+    color:#f7931e;
+    font-size: 12px;
+    font-weight: 400;
+} 
+
+/* General Classes*/
+.hide-on-mobile{
+    display: none;
+}
 
 
 
@@ -288,9 +418,11 @@ button{
 /* social Icons******************************/
 .social-icons{
     text-align: center;
+
 }
 .icons{
     margin-top: 4%;
+   
 }
 /* .mediaIcons{
     position: relative;
@@ -524,7 +656,7 @@ button{
     }
     button{
         margin: 1% 2% 1% 15%;
-        width: 65vw;
+        width: 30vw;
         height: 8vh;
         border-radius: 50px;
         border: none;
@@ -547,7 +679,7 @@ button{
         height: 8vh;
         border-radius: 50px;
         border: none;
-        background:  #eb5e28;
+        background:   #eb5e28;
     }
     
     .name{
@@ -577,9 +709,110 @@ button{
          margin-left: 2%;
          width: 20vw;
          height: 8vh;
+         
      }
 
-     /*Testimonials  */
+     /*Testimonials******************************/
+     .testimonials{
+        position: relative;
+        top: 30%;
+        left: 5%;
+        width: 90vw;
+        height: 170vh;
+    }
+     .card{
+        border:0;
+        background-color:#1A1A1A;
+    } 
+    
+    .card-text{
+        text-align: center;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .icons{
+        margin-top: 2%;
+        font-size: 1em;
+        margin-left: 35px ;
+        padding: 8px; 
+    
+    }
+    .names{
+        position: relative;
+        transform: translateY(0.5vh);
+        left: 0.5%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .card-body{
+        background-color: #eb5e28;
+    }
+    .testiMonial{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        text-align: center;
+        color: white;
+    }
+    .col{
+        margin-top: 50px;
+    }
+
+    /* Get In Touch ***************************************************/
+
+    .getInTouch{
+        margin: 25% 0% 0% 5%;
+         width: 90vw;
+         height: 80vh;
+     }
+     form{
+         margin-left: 15%;
+         width:70%; 
+     }
+     .paras2{
+         font-size: 15px;
+         font-weight: 200;
+         
+     }
+     .orangeBtn1{
+         margin: 2% 0% 0% 1%;
+         width: 15vw;
+         height: 8vh; 
+     }
+
+     /* Footer */
+    
+     
+     .copy{
+         font-size: 15px;
+         font-weight: 400;
+         margin-top: -1%; 
+         margin-left: 40%;
+     }
+      .programmer{
+          margin-top: 5%;
+         font-size: 14px;
+         font-weight: 400;
+      }
+      .media{
+        margin-top: -5%;
+        margin-left: 41%;
+      }
+      .footerIcons{
+        
+        
+        font-size: 0.6em;
+        margin-left: 1px;
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 8px;  
+      }
+
 
     
 
