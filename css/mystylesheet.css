@@ -12,6 +12,11 @@ html{
     overflow-x: hidden;
 }
 
+.headerSection
+{
+    background-color: black !important;
+}
+
 /* general styles */
 .hide-on-mobile{
     display: none;
@@ -79,8 +84,8 @@ h1{ margin-top: 20%;
     background:#1A1A1A;
 }
 .col-sm-12{
-    background:#1A1A1A !important;
-    border: 1px solid white;
+    background:#1A1A1A;
+    /* border: 1px solid white; */
 }
 #menuToggle {
     display: block;
@@ -156,7 +161,7 @@ h1{ margin-top: 20%;
 
   /* landing section *******************/
   .taglineBlock{
-      margin-top: 24%;
+    margin-top: 24%;
     background-color:#1A1A1A;
     width: 100vw;
     height: 58vh;
@@ -179,8 +184,8 @@ h1{ margin-top: 20%;
 /* About me section**************************/
  .aboutMe{
     background-color:#1A1A1A !important;
-    width: 90vw;
-    margin-left: 5%;
+    width: 100vw;
+    height:130vh;
 }    
 .subHeading{
     position: relative;
@@ -355,22 +360,21 @@ a{
 
 /* Footer*******************/
 .footerIcons{
-    position: relative;
-    left:25%;
-    margin-top: 90%;
-    font-size: 1.2em;
-    margin-left: 10px ;
-    border-radius: 50%;
-    border: 1px solid white;
-    padding: 8px;  
-}
+        position: relative;
+        margin-top: 30%;
+        left:40%;
+        font-size: 0.5em;
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 10px; 
+    }
 
 .copy{
     font-family: 'Montserrat', sans-serif;
     color:white;   
     font-size: 12px;
     font-weight: 400;
-    margin-top: 2%; 
+    margin-top: 3%; 
     margin-left: 14%;
 }
  .programmer{
@@ -384,6 +388,41 @@ a{
 .hide-on-mobile{
     display: none;
 }
+
+
+/* RESUME PAGE******************************************/
+.aboutMe2{
+        background-color:#1A1A1A !important;
+        width: 100vw;
+        height:450vh;
+}
+.aboutText{
+    position: relative;
+    margin-top: 10%;
+    /* transform: translateY(0.5vh); */
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f7931e;   
+}
+.texting{
+    margin-top: 3%;
+    text-align: justify;
+}
+.texts{
+    margin-top:5%;
+    text-align: left;
+}
+.stars{
+    font-size: 0.6em;
+    color: #f7931e ;
+}
+.skillsText{
+    font-size:16px;
+    color: white;
+}
+
 
 
 
@@ -471,7 +510,7 @@ h1{ margin-bottom: 20%;
     padding: 1px 1px 1px 10px ;
     color: grey;
 }
-/* About Me Section *******************************************************/
+/* About Me Section ***************************************************/
 /* .aboutMe{
     position: relative;
     top:-62%;
@@ -630,14 +669,7 @@ button{
         color: grey;
     }
     /* About Me Section *******************************************************/
-    /* .aboutMe{
-        position: relative;
-        top:-62%;
-        left: 75px;
-        background-color:#1A1A1A;
-        width: 90vw;
-        height: 70vh;
-    }    */
+    
     .image{
         margin: 20% 0% 18% 2%;
         width: 303px;
@@ -786,8 +818,6 @@ button{
      }
 
      /* Footer */
-    
-     
      .copy{
          font-size: 15px;
          font-weight: 400;
@@ -804,17 +834,12 @@ button{
         margin-left: 41%;
       }
       .footerIcons{
-        
-        
         font-size: 0.6em;
         margin-left: 1px;
         border-radius: 50%;
         border: 1px solid white;
         padding: 8px;  
       }
-
-
-    
 
  }
 
