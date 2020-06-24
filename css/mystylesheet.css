@@ -389,7 +389,6 @@ a{
     display: none;
 }
 
-
 /* RESUME PAGE******************************************/
 .aboutMe2{
         background-color:#1A1A1A !important;
@@ -397,16 +396,13 @@ a{
         height:450vh;
 }
 .aboutText{
-    position: relative;
-    margin-top: 10%;
-    /* transform: translateY(0.5vh); */
-    left: 0.5%;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 12%;
+    margin-left: 0.5%;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     color: #f7931e;   
 }
-.texting{
+ /* .texting{
     margin-top: 3%;
     text-align: justify;
 }
@@ -421,9 +417,9 @@ a{
 .skillsText{
     font-size:16px;
     color: white;
-}
+}  */
 
-
+  
 
 
 
@@ -593,6 +589,9 @@ button{
         display: block;
     }
     .menu{
+        display: none;
+    }
+    .mobile-only{
         display: none;
     }
 
@@ -840,6 +839,57 @@ button{
         border: 1px solid white;
         padding: 8px;  
       }
+
+      /* RESUME PAGE ***************************************/
+
+      .subHeading{
+          margin-bottom:5%;
+      }
+      .aboutMe2{
+        background-color:#1A1A1A !important;
+        width: 90vw;
+        height:175vh;
+    }
+    .aboutText{
+        margin: 8% 0% 5% 0%;
+        font-weight: 500;
+        font-size: 20px;
+        color: #f7931e;
+    }
+    .skill{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+    .texting{
+        margin-top: 3%;
+        text-align: left;
+        font-size: 15px;
+    }
+    .texts{
+        margin-top:5%;
+        text-align: left;
+        font-size: 15px;
+    }
+    .stars{
+        margin-top: 12%;
+        margin-left: 10% ;
+        font-size: 1.8em;
+        color: white;
+    }
+    .skillsText{
+        font-size:18px;
+        color: white;
+    }
+    .skillsDiv{
+        margin-top: 25%;
+        margin-left: 12%;
+        height: 50vh;
+        background-color: #EB5E28;
+    }
+
+
 
  }
 
