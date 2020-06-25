@@ -15,6 +15,7 @@ html{
 .headerSection
 {
     background-color: black !important;
+  
 }
 
 /* general styles */
@@ -65,7 +66,8 @@ html{
     background-color: black;
     height: 55px;
 }
-h1{ margin-top: 20%;
+h1{
+     margin-top: 15%;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 500;
@@ -161,7 +163,7 @@ h1{ margin-top: 20%;
 
   /* landing section *******************/
   .taglineBlock{
-    margin-top: 24%;
+    margin-top: 13%;
     background-color:#1A1A1A;
     width: 100vw;
     height: 58vh;
@@ -183,13 +185,15 @@ h1{ margin-top: 20%;
 }
 /* About me section**************************/
  .aboutMe{
+    position: relative;
+    top: 3%;
     background-color:#1A1A1A !important;
     width: 100vw;
     height:130vh;
 }    
 .subHeading{
     position: relative;
-    top: 4%;
+    top: 2%;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 300;
@@ -229,6 +233,7 @@ button{
 }
 
  /* ADA Graduate section**********************************/
+ 
  .logo{
     margin: 20% 2% 18% 2%;
     width: 200px;
@@ -263,7 +268,7 @@ button{
  /* testimonials section */
  .testimonials{
     position: relative;
-    top: 10%;
+    top: 5%;
     background-color:#1A1A1A;
     width: 100vw;
     height: 215vh;
@@ -331,7 +336,7 @@ a{
   }
 
 .getInTouch{
-    margin-top: 39%;
+    margin-top: 30%;
     background-color:#1A1A1A;
     width: 100vw;
     height: 90vh;
@@ -389,11 +394,59 @@ a{
     display: none;
 }
 
+
+/* ABOUT ME PAGE ****************************/
+
+.laptopIcon{
+    margin-top: 10%;
+    margin-left: 42%;
+    font-size: 1em;
+    width: 60px;
+    height: 60px;
+    background-color: #F7931E;
+    color: black;
+    border-radius: 50%;
+    padding: 10px; 
+    text-align: center;
+} 
+.developerText{
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f7931e;
+}
+.medalIcon{
+    margin-top: 10%;
+    margin-left: 42%;
+    font-size: 1.2em;
+    width: 60px;
+    height: 60px;
+    background-color: #F7931E;
+    color: black;
+    border-radius: 50%;
+    padding: 10px; 
+    text-align: center;
+} 
+.userIcon{
+    margin-top: 10%;
+    margin-left: 42%;
+    font-size: 1.2em;
+    width: 60px;
+    height: 60px;
+    background-color: #F7931E;
+    color: black;
+    border-radius: 50%;
+    padding: 10px; 
+    text-align: center;
+}
+
 /* RESUME PAGE******************************************/
 .aboutMe2{
         background-color:#1A1A1A !important;
         width: 100vw;
-        height:450vh;
+        height:350vh;
 }
 .aboutText{
     margin-top: 12%;
@@ -402,22 +455,30 @@ a{
     font-size: 20px;
     color: #f7931e;   
 }
- /* .texting{
+  .texting{
     margin-top: 3%;
     text-align: justify;
 }
-.texts{
+ .texts{
     margin-top:5%;
     text-align: left;
 }
-.stars{
-    font-size: 0.6em;
+  .stars{
+    font-size: 1.6em;
     color: #f7931e ;
-}
+} 
 .skillsText{
-    font-size:16px;
+    font-weight: 500;
+    font-size: 16px;
     color: white;
-}  */
+}
+.footer{
+    margin-top: 100%;
+} 
+.education{
+    margin:1px;
+}   
+
 
   
 
@@ -476,7 +537,8 @@ a{
 
 /*Landing page************************************/
 
-h1{ margin-bottom: 20%;
+h1{
+    margin-bottom: 2%;
     font-size: 40px;
     font-weight: 500;
 }
@@ -637,9 +699,9 @@ button{
         font-size: 20px;
        color: white;
     }
-    h1{ margin-top: 2%;
-        font-size: 40px;
-        font-weight: 500;
+    h1{ margin-top: 5%;
+        /* font-size: 40px;
+        font-weight: 500; */
     }
     .taglineBlock{
         margin-top: 6%;
@@ -668,6 +730,18 @@ button{
         color: grey;
     }
     /* About Me Section *******************************************************/
+    /* .aboutMe{
+        position: relative;
+        top:-62%;
+        left: 75px;
+        background-color:#1A1A1A;
+        width: 90vw;
+        height: 70vh;
+    }  */
+    .aboutMe{
+        height: 95vh;
+        width: 90%;
+    }
     
     .image{
         margin: 20% 0% 18% 2%;
@@ -679,10 +753,6 @@ button{
         margin-top: 7%;
         font-size: 20px;
         font-weight: 100;
-        /* padding: 1px 40px 10px 40px; */
-        /* width: 50vw;
-        height: 80vh; */
-        /* left:500px; */
         color: white;
     }
     button{
@@ -719,6 +789,10 @@ button{
     }
 
      /* ADA Graduate section**********************************/
+     .graduate{
+         margin-bottom: 5%;
+        width: 90vw;
+    }
     .logo{
         margin: 20% 0% 18% 2%;
         width: 303px;
@@ -740,13 +814,13 @@ button{
          margin-left: 2%;
          width: 20vw;
          height: 8vh;
-         
+  
      }
 
      /*Testimonials******************************/
      .testimonials{
         position: relative;
-        top: 30%;
+        top: 10%;
         left: 5%;
         width: 90vw;
         height: 170vh;
@@ -797,7 +871,7 @@ button{
     /* Get In Touch ***************************************************/
 
     .getInTouch{
-        margin: 25% 0% 0% 5%;
+        margin: 13% 0% 0% 5%;
          width: 90vw;
          height: 80vh;
      }
@@ -821,7 +895,7 @@ button{
          font-size: 15px;
          font-weight: 400;
          margin-top: -1%; 
-         margin-left: 40%;
+         margin-left: 37%;
      }
       .programmer{
           margin-top: 5%;
@@ -829,10 +903,11 @@ button{
          font-weight: 400;
       }
       .media{
-        margin-top: -5%;
-        margin-left: 41%;
+        margin-top: 2%;
+        margin-left: 36%;
       }
       .footerIcons{
+          margin-top: 8%;
         font-size: 0.6em;
         margin-left: 1px;
         border-radius: 50%;
@@ -848,7 +923,7 @@ button{
       .aboutMe2{
         background-color:#1A1A1A !important;
         width: 90vw;
-        height:175vh;
+        height:170vh;
     }
     .aboutText{
         margin: 8% 0% 5% 0%;
@@ -873,7 +948,7 @@ button{
         font-size: 15px;
     }
     .stars{
-        margin-top: 12%;
+        margin-top: 4%;
         margin-left: 10% ;
         font-size: 1.8em;
         color: white;
@@ -882,12 +957,59 @@ button{
         font-size:18px;
         color: white;
     }
+    .mySkills{
+        color:white;
+    }
     .skillsDiv{
-        margin-top: 25%;
-        margin-left: 12%;
-        height: 50vh;
+        margin-top: 10%;
+        height: 40vh;
+    }
+    .orangeDiv{
         background-color: #EB5E28;
     }
+    .education{
+        margin:1px;
+    }
+    
+    /* ABOUT ME PAGE ****************************/
+
+    .laptopIcon{
+        margin-top: 1%;
+        margin-left: 87%;
+        font-size: 1em;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        color: black;
+    } 
+    .developerText{
+        margin-top: 7%;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .juniorText{
+        margin-top: 4%;
+        margin-right: 52%;
+        color: black;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .medalIcon{
+        font-size: 1.2em;
+        margin-top: 10%;
+        margin-left: 45%;
+    } 
+    .userIcon{
+        font-size: 1.2em;
+        margin-top: 10%;
+        margin-left: 42%;
+    }
+    .orangeDesktop{
+        background-color:#EB5E28 ;
+    }
+
+
+
 
 
 
