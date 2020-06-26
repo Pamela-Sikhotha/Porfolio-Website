@@ -49,11 +49,11 @@
 
                 <!--Overlay content----------------------------------------------------------------->
                 <div class="overlay-content">
-                    <a href="index.html">home</a>
-                    <a href="aboutMe.html">about me</a>
-                    <a href="journey.html">journey</a>
-                    <a href="resume.html">resume</a>
-                    <a href="">Get In touch</a>
+                    <a href="index.html" class="overlayText">home</a>
+                    <a href="aboutMe.html" class="overlayText">about me</a>
+                    <a href="journey.html" class="overlayText">journey</a>
+                    <a href="resume.html" class="overlayText">resume</a>
+                    <a href="getInTouch.html" class="overlayText">Get In touch</a>
                 </div>
 
                 <div class="navbar-brand col-4 mobile-only tablet-only" id="menuToggle">
@@ -70,7 +70,7 @@
   
     <hr class="hrLine">
 
-    <div class="row hide-on-mobile show-on-desktop">
+    <div class="row hide-on-mobile show-on-desktop" id="fixGrey">
        
               <!-- Desktop NavBar ---------------------------------------------->
 
@@ -85,7 +85,7 @@
               <a class="nav-link" href="index.html"><strong class="navigation1">HOME</strong> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="aboutMe.html"> <strong class="navigation">ABOUT ME</strong> </a>
+              <a class="nav-link" href="aboutMe.html"><strong class="navigation">ABOUT ME</strong> </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="journey.html"><strong class="navigation">JOURNEY</strong> </a>
@@ -105,21 +105,23 @@
     
 <!-- About me section --------------------------------------------------------->
  <h2 class="subHeading">About me</h2>
+ 
  <div class="container-fluid my-5 aboutMe">
      <div class="row">
-         
-            <div class="col-sm-12 col-lg-6 orangeDesktop">
-                 <!-- laptop icon -->
-                 <i class="fas fa-laptop-code laptopIcon"></i>
-               
 
-                </div>
+            
+
                 <div class="col-sm-12 col-lg-6 orangeDesktop">
-                <p class="developerText juniorText">Junior Front-End Developer</p>
-                    
+                  <i class="fas fa-laptop-code laptopIcon"></i>
+                
                 </div>
 
+                <div class="col-sm-12 col-lg-6 orangeDesktop">
+                  <p class="developerText juniorText">Junior Front-End Developer</p>
+                </div>
      </div>
+
+     
             
            <div class="row">
              <div class="col-sm-12 col-lg-6 col-xl-6">
@@ -149,6 +151,8 @@
  </div>
 
  <br>
+
+
 
 <!--Footer------------------------------------------------->
   

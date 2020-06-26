@@ -11,23 +11,17 @@ body{
 html{
     overflow-x: hidden;
 }
-
-.headerSection
-{
+.headerSection{
     background-color: black !important;
-  
 }
-
 /* general styles */
 .hide-on-mobile{
     display: none;
 }
-
 /* menu */
 .menu{
     float: right;
 }
-
 /* Social Icons */ 
 .mediaIcons{
     display: inline-block;
@@ -42,7 +36,7 @@ html{
 }
 .NavbarIcon{
     margin-top: 3%;
-    margin-left: 15px;
+    margin-left: 10px;
     text-align: center;
     float: right;
     font-size: 0.6em;
@@ -74,9 +68,6 @@ h1{
    text-align: center;
    color: #eb5e28;
 }
-/* .container-fluid{
-    background: black;
-} */
 .hrLine{
     border: white 0.5px solid;
     opacity: 0.5;
@@ -85,9 +76,14 @@ h1{
 .row{
     background:#1A1A1A;
 }
+
+#fixGrey{
+
+    background-color: black !important;
+}
+
 .col-sm-12{
     background:#1A1A1A;
-    /* border: 1px solid white; */
 }
 #menuToggle {
     display: block;
@@ -111,6 +107,10 @@ h1{
     background: white;
     border-radius: 3px;
     z-index: 1;
+}
+.overlayText{
+    font-size: 12px;
+    font-weight: 500;
 }
 
  /* The Overlay (background) */
@@ -152,15 +152,15 @@ h1{
     font-size: 1.2em;
     font-family: 'Montserrat', sans-serif; 
 }
-  
   /* Position the close button (top right corner) */
   .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-
+    position: absolute; 
+    top: 14px;
+    right: 39px;
+    width: 35px;
+    height: 35px;
+    font-size:1.9em;
+}
   /* landing section *******************/
   .taglineBlock{
     margin-top: 13%;
@@ -183,17 +183,22 @@ h1{
    text-align: center;
    color: #f7931e;
 }
+
 /* About me section**************************/
  .aboutMe{
     position: relative;
     top: 3%;
-    background-color:#1A1A1A !important;
+    /* background-color:#1A1A1A !important; */
     width: 100vw;
     height:130vh;
-}    
+}   
+#aboutMeButton{
+    position: relative;
+    left: 8vw;
+}
 .subHeading{
     position: relative;
-    top: 2%;
+    top: 5%;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 300;
@@ -201,7 +206,7 @@ h1{
     color: #f7931e;
 }
 .image{
-    margin: 23% 10% 18% 16%;
+    margin: 15% 10% 18% 16%;
     width: 199px;
     border: 2px solid white;
     box-shadow: -20px -20px grey;
@@ -232,8 +237,10 @@ button{
     color: white;   
 }
 
- /* ADA Graduate section**********************************/
- 
+ /* ADA Graduate section*****************/
+ .graduate{
+     padding-top: 12%;
+ }
  .logo{
     margin: 20% 2% 18% 2%;
     width: 200px;
@@ -265,20 +272,20 @@ button{
      border: none;
      background:  #eb5e28;
  }
+
  /* testimonials section */
  .testimonials{
     position: relative;
     top: 5%;
     background-color:#1A1A1A;
     width: 100vw;
-    height: 215vh;
+    /* height: 215vh; */
 }
  .card{
      margin: 7% 0% 15% 5%;
     border:0;
     background-color:#1A1A1A;
 } 
-
 .card-text{
     text-align: center;
     color: white;
@@ -289,9 +296,8 @@ button{
 .icons{
     margin-top: 2%;
     font-size: 1em;
-    /* margin-left: 35px ; */
+    /* margin-left: 30px ; */
     padding: 8px; 
-
 }
 .names{
     position: relative;
@@ -302,7 +308,6 @@ button{
     font-size: 15px;
     color: white;
 }
-
 .card-body{
     background-color: #eb5e28;
 }
@@ -320,8 +325,8 @@ button{
 a{
     color:white;
 }
-/* Get In Touch**********************************************/
 
+/* Get In Touch******************/
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white !important;
     opacity: 1 !important; /* Firefox */
@@ -333,13 +338,15 @@ a{
   
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: white !important;
-  }
-
+}
 .getInTouch{
     margin-top: 30%;
     background-color:#1A1A1A;
     width: 100vw;
     height: 90vh;
+}
+.getInTouch1{
+    margin-top: 5%;
 }
 .paras2{
     margin-top: 60px;
@@ -353,7 +360,6 @@ a{
 .form-control{
  background-color: #666666;
 }
-
 .orangeBtn1{
     margin: 2% 0% 0% 3%;
     width: 65vw;
@@ -394,9 +400,7 @@ a{
     display: none;
 }
 
-
-/* ABOUT ME PAGE ****************************/
-
+/* ABOUT ME PAGE **************************/
 .laptopIcon{
     margin-top: 10%;
     margin-left: 42%;
@@ -442,7 +446,7 @@ a{
     text-align: center;
 }
 
-/* RESUME PAGE******************************************/
+/* RESUME PAGE******************/
 .aboutMe2{
         background-color:#1A1A1A !important;
         width: 100vw;
@@ -455,7 +459,7 @@ a{
     font-size: 20px;
     color: #f7931e;   
 }
-  .texting{
+.texting{
     margin-top: 3%;
     text-align: justify;
 }
@@ -477,15 +481,21 @@ a{
 } 
 .education{
     margin:1px;
-}   
+} 
+.aboutMe3{
+    background-color:#1A1A1A !important;
+    width: 100vw;
+    height:520vh;
+}  
+/* my journey **********/
+.ADA{
+    text-align: justify;
+}
 
 
-  
 
 
-
-
-/* --MEDIA QUERIES------------------------------------------------------------media queries */
+/* --MEDIA QUERIES------------------------------------media queries */
 
 /* // Extra small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
@@ -514,11 +524,9 @@ a{
 /* social Icons******************************/
 .social-icons{
     text-align: center;
-
 }
 .icons{
     margin-top: 4%;
-   
 }
 /* .mediaIcons{
     position: relative;
@@ -568,7 +576,7 @@ h1{
     padding: 1px 1px 1px 10px ;
     color: grey;
 }
-/* About Me Section ***************************************************/
+/* About Me Section *******************************/
 /* .aboutMe{
     position: relative;
     top:-62%;
@@ -587,20 +595,18 @@ h1{
     margin-top: 7%;
     font-size: 20px;
     font-weight: 100;
-    /* padding: 1px 40px 10px 40px; */
-    /* width: 50vw;
-    height: 80vh; */
-    /* left:500px; */
     color: white;
 }
 button{
-    margin: 1% 2% 1% 15%;
+    position: relative;
+    margin: 1% 2% 1% 30%;
     width: 65vw;
     height: 8vh;
     border-radius: 50px;
     border: none;
     background:  #eb5e28;
 }
+
 .btnHeading{
     position: relative;
     transform: translateY(0.5vh);
@@ -610,7 +616,6 @@ button{
     font-size: 15px;
     color: white;   
 }
-
 .orangeBtn1{
     margin-top: 2%;
    margin-left: 3%;
@@ -625,8 +630,6 @@ button{
     position: relative;
     top: -4.5%;
 }
-
- }
 
 /* // --------------------------------------------------------------Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -664,18 +667,23 @@ button{
     .icons{
         margin-top: 4%;
     }
-     
      .mediaIcons{
         font-size: 0.6em;
         margin-left: 1px;
         margin-top: 5%;
     } 
+    .hrLine{
+        border: white 0.5px solid;
+        opacity: 0.5;
+        width: 90vw;
+        margin-left: 2%;
+    }
     h1{
         font-size: 45px;
         font-weight: 500;
     } 
 
-    /* Navigation************************************/
+    /* Navigation*******************************/
     .desktopNavbar{
         position: relative;
         left: 25%;
@@ -692,16 +700,13 @@ button{
         font-weight: 200;
        /* text-align: center; */
        color: white;
-
     }
     .navigation1{
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
        color: white;
     }
-    h1{ margin-top: 5%;
-        /* font-size: 40px;
-        font-weight: 500; */
+    h1{ margin-top: 5%; 
     }
     .taglineBlock{
         margin-top: 6%;
@@ -729,20 +734,14 @@ button{
         padding: 1px 1px 1px 10px ;
         color: grey;
     }
-    /* About Me Section *******************************************************/
-    /* .aboutMe{
-        position: relative;
-        top:-62%;
-        left: 75px;
-        background-color:#1A1A1A;
-        width: 90vw;
-        height: 70vh;
-    }  */
+    /* About Me Section ********************************/
     .aboutMe{
         height: 95vh;
         width: 90%;
     }
-    
+    .subHeading{
+        margin-top:8%;
+    }
     .image{
         margin: 20% 0% 18% 2%;
         width: 303px;
@@ -772,7 +771,6 @@ button{
         font-size: 15px;
         color: white;   
     }
-    
     .orangeBtn1{
         margin-top: 2%;
        margin-left: 3%;
@@ -782,7 +780,6 @@ button{
         border: none;
         background:   #eb5e28;
     }
-    
     .name{
         position: relative;
         top: -4.5%;
@@ -790,7 +787,7 @@ button{
 
      /* ADA Graduate section**********************************/
      .graduate{
-         margin-bottom: 5%;
+       margin-bottom: 5%;
         width: 90vw;
     }
     .logo{
@@ -800,8 +797,7 @@ button{
      }
      .gradPara{
          font-size: 13px;
-         font-weight: 200;
-         
+         font-weight: 200;  
      }
      .greyBtn{
          margin-top: 5%;
@@ -814,7 +810,6 @@ button{
          margin-left: 2%;
          width: 20vw;
          height: 8vh;
-  
      }
 
      /*Testimonials******************************/
@@ -823,13 +818,12 @@ button{
         top: 10%;
         left: 5%;
         width: 90vw;
-        height: 170vh;
+        height: 14  0vh;
     }
      .card{
         border:0;
         background-color:#1A1A1A;
     } 
-    
     .card-text{
         text-align: center;
         color: white;
@@ -842,7 +836,6 @@ button{
         font-size: 1em;
         margin-left: 35px ;
         padding: 8px; 
-    
     }
     .names{
         position: relative;
@@ -853,7 +846,6 @@ button{
         font-size: 15px;
         color: white;
     }
-    
     .card-body{
         background-color: #eb5e28;
     }
@@ -868,9 +860,13 @@ button{
         margin-top: 50px;
     }
 
-    /* Get In Touch ***************************************************/
-
+    /* Get In Touch *************************/
     .getInTouch{
+        margin: 13% 0% 0% 5%;
+         width: 90vw;
+         height: 80vh;
+     }
+     .getInTouch1{
         margin: 13% 0% 0% 5%;
          width: 90vw;
          height: 80vh;
@@ -881,8 +877,7 @@ button{
      }
      .paras2{
          font-size: 15px;
-         font-weight: 200;
-         
+         font-weight: 200; 
      }
      .orangeBtn1{
          margin: 2% 0% 0% 1%;
@@ -890,7 +885,7 @@ button{
          height: 8vh; 
      }
 
-     /* Footer */
+     /* Footer ************************/
      .copy{
          font-size: 15px;
          font-weight: 400;
@@ -972,7 +967,6 @@ button{
     }
     
     /* ABOUT ME PAGE ****************************/
-
     .laptopIcon{
         margin-top: 1%;
         margin-left: 87%;
@@ -1005,19 +999,24 @@ button{
         margin-left: 42%;
     }
     .orangeDesktop{
-        background-color:#EB5E28 ;
+        background-color:#EB5E28 !important;
+        margin-top: 30px;
+    }
+    .aboutMe3{
+        background-color:#1A1A1A !important;
+        width: 100vw;
+        height: 170vh;
+    }  
+    .ADA{
+        margin-top: 15%;
+        text-align: justify;
     }
 
-
-
-
-
-
  }
-
 
  /* --------------------------------------------------------------Internet Explorer */
  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
 
  }
+}

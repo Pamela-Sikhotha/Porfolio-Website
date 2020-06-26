@@ -48,15 +48,18 @@
            
             <!--the overlay------------------------------------------------------------>
             <div id="myNav" class="overlay hide-on-desktop">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             
+               
 
                 <!--Overlay content----------------------------------------------------------------->
                 <div class="overlay-content">
-                    <a href="index.html">home</a>
-                    <a href="aboutMe.html">about me</a>
-                    <a href="journey.html">journey</a>
-                    <a href="resume.html">resume</a>
-                    <a href="">Get In touch</a>
+                    <a href="index.html" class="overlayText">home</a>
+                    <a href="aboutMe.html" class="overlayText">about me</a>
+                    <a href="journey.html" class="overlayText">journey</a>
+                    <a href="resume.html" class="overlayText">resume</a>
+                    <a href="getInTouch.html" class="overlayText">Get In touch</a>
                 </div>
 
                 <div class="navbar-brand col-4 mobile-only tablet-only" id="menuToggle">
@@ -73,9 +76,9 @@
      <!--hr line--------->
     <hr class="hrLine">
 
-    <div class="row hide-on-mobile show-on-desktop">
+    <div class="row hide-on-mobile show-on-desktop" id="fixGrey">
        
-    <!-- Desktop NavBar ------------------------------------------------------------------->
+    <!-- Desktop NavBar -------------------------------------------------------->
 
     <nav class="navbar navbar-expand-lg navbar-white desktop-only desktopNavbar">
      
@@ -106,14 +109,13 @@
             <li class="nav-item">
               <a class="nav-link" href="getInTouch.html"><strong class="navigation">GET IN TOUCH</strong></a>
             </li>
-
           </ul>
         </div>
       </nav>
     </div>
 </div> 
     
-<!--landing page: tagline section --------------------------------------------------------->
+<!--landing page: tagline section ----------------------------------------------->
 
 <div class="container-fluid taglineBlock">
   
@@ -127,9 +129,9 @@
 
 
 
-    <!-- About Me section ----------------------------------------------------------------->
+    <!-- About Me section ------------------------------------------------>
 
-<div class="container-fluid my-5 aboutMe ">
+<div class="container-fluid my-5 aboutMe">
     <div class="row">
         <div class=" text-center col-sm-12 col-lg-6 hide-on-mobile show-on-desktop"> <img src="assets/images/PamelaHeadshot.jpg" class="image" alt="image"></div>
 
@@ -146,17 +148,17 @@
                     I also love design because it helps me dream up creative concepts that take advantage of my surroundings for extraordinary results, creating beautiful artwork and lettering. I find painting and lettering to be both fun and also incredibly therapeutic, allowing me to calm my mind by focusing on each pen or brush stroke. 
                     </p>
                 </div>
-
-                <button class=""><h3 class="btnHeading">more about me</h3></button>
-
+                  <a href="aboutMe.html">
+                    <button id="aboutMeButton"><h3 class="btnHeading">more about me</h3></button>
+                  </a> 
             </div>
         </div>
     </div>
 </div>
 
-<br>
 
-  <!--ADA Graduate section------------------------------------------------------------------->
+
+  <!--ADA Graduate section-------------------------------------------------->
 
   <div class="container-fluid my-5 graduate">
     <div class="row">
@@ -210,7 +212,7 @@
       </div>
 
       <div class="col-md-3 col-6">
-        <p class="testiMonial firstRowText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros. Pellentesque suscipit eros quam, nec consectetur magna suscipit vitae.
+        <p class="testiMonial firstRowText"> Pamela participated in the first cohort of students at the African Developers Academy, beating incredible odds to be chosen as one of only 12 ladies to take part in the Front-End Development course. She has completed her studies and has a bright future ahead of her! 
         <br>
         <strong class="names">- ADA</strong>
         </p>
@@ -229,12 +231,11 @@
     </div>
 
     <div class="col-md-3 col-6">
-      <p class="testiMonial  firstRowText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros. Pellentesque suscipit eros quam, nec consectetur magna suscipit vitae.
+      <p class="testiMonial  firstRowText">Pam is a natural designer and artist, she is creative and has a way with words. She is also a good coder, able to learn new concepts and apply them. Pam is also a kind and naturally intelligent person, she has an open mind and is often a voice of reason amongst her peers. 
       <br> 
       <strong class="names">- Laura Seal</strong>
       </p>
     </div>
-
 </div>
 
   <div class="row firstRow">
@@ -251,7 +252,8 @@
     </div>
 
     <div class="col-md-3 col-6">
-      <p class="testiMonial firstRowText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros. Pellentesque suscipit eros quam, nec consectetur magna suscipit vitae.
+      <p class="testiMonial firstRowText">If you ever need something beautifully designed, Pam is your person! She has a knack for design, particularly when it comes to anything digital. She makes beautiful websites and has a strong understanding of the foundations when it comes to the development of a website. 
+
       <br>
       <strong class="names">- Andrea Hayes</strong>
       </p>
@@ -270,7 +272,8 @@
   </div>
 
   <div class="col-md-3 col-6">
-    <p class="testiMonial  firstRowText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem ex. Sed gravida mauris eu dignissim fringilla. Nam non lorem euismod, tincidunt quam id, facilisis eros. Pellentesque suscipit eros quam, nec consectetur magna suscipit vitae.
+    <p class="testiMonial  firstRowText">Things seem like they come naturally to Pam, she handles challenging situations with a sense of ease and grace. She has an affinity for design, her work is always visually appealing and neat.  
+
     <br> 
     <strong class="names">- Kate Marsay</strong>
     </p>
@@ -280,7 +283,7 @@
   </div>
 </div>
  
-<!--Get In Touch---------------------------------------------------------------------------------->
+<!--Get In Touch------------------------------------------------------------------------>
 
 <div class="getInTouch">
   <h2 class="subHeading">Get In touch!</h2>
@@ -289,21 +292,25 @@
      Have any questions? Let me know by sending me a message! I’ll get back to you as soon as possible. Would love to hear from you.
      </p>
 
-     <form>
+     <form action="https://formspree.io/xqkylrnw" method="POST">
       <div class="form-group">
-        <input type="fullName" class="form-control" id="FormControlInput1" placeholder="Your name">
+        <input type="text" name="name" class="form-control" id="FormControlInput1" placeholder="Your name">
       </div>
 
       <div class="form-group">
-        <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com">
+        <input type="email" name="_replyto" class="form-control" id="FormControlInput2" placeholder="name@example.com">
       </div>
     
       <div class="form-group">
-        <textarea class="form-control" id="FormControlTextarea1" rows="6" placeholder="Your message"></textarea>
+        <textarea class="form-control" name="message" id="FormControlTextarea1" rows="6" placeholder="Your message"></textarea>
       </div>
+      
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button class="orangeBtn1" type="submit"><h3 class="btnHeading">send!</h3></button>
     </form>
 
-    <button class="orangeBtn1"><h3 class="btnHeading">send!</h3></button>
+   
 
   </div>
 </div>
