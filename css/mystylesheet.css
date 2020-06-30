@@ -1,0 +1,1048 @@
+body{ 
+    background-color:black;
+    font-size: 2em;
+    color:white ;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+}
+
+/* this is the navbar section */
+html{
+    overflow-x: hidden;
+}
+.headerSection{
+    background-color: black !important;
+}
+/* general styles */
+.hide-on-mobile{
+    display: none;
+}
+/* menu */
+.menu{
+    float: right;
+}
+/* Social Icons */ 
+.mediaIcons{
+    display: inline-block;
+    margin-top: -4%;
+    font-size: 0.6em;
+    margin-left: 1px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    z-index: 50 !important;
+    padding: 8px;  
+}
+.NavbarIcon{
+    margin-top: 3%;
+    margin-left: 10px;
+    text-align: center;
+    float: right;
+    font-size: 0.6em;
+    width: 35px;
+    height: 35px; 
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 6px 1px 1px 1px; 
+}
+.closebtnIcon{
+    float: right;
+}
+/* desktop navbar */
+.desktopNavbar{
+    display: none;
+}
+.navbar{
+    margin-top:-5%;
+}
+.NavBar{
+    background-color: black;
+    height: 55px;
+}
+h1{
+     margin-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+   text-align: center;
+   color: #eb5e28;
+}
+.hrLine{
+    border: white 0.5px solid;
+    opacity: 0.5;
+    width: 90vw;
+}
+.row{
+    background:#1A1A1A;
+}
+
+#fixGrey{
+
+    background-color: black !important;
+}
+
+.col-sm-12{
+    background:#1A1A1A;
+}
+#menuToggle {
+    display: block;
+    position: relative;
+    bottom: 0.5vh;
+    left: 315px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.arrow{
+    display: none;
+}
+#menuToggle span {
+    display: block;
+    width: 35px;
+    height: 2.5px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 35px;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+}
+.overlayText{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+ /* The Overlay (background) */
+ .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 100vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left:-100vw;
+    top: 0;
+    z-index: 5;
+    background-color: #1A1A1A; /* Black fallback color */
+    /* background-color: rgba(0,0,0, 0.9); Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 95%;
+    font-weight: 700;
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif; 
+}
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute; 
+    top: 14px;
+    right: 39px;
+    width: 35px;
+    height: 35px;
+    font-size:1.9em;
+}
+  /* landing section *******************/
+  .taglineBlock{
+    margin-top: 13%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 58vh;
+}
+.landingSection{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 145px;
+    font-weight: 200;
+    text-align: center;
+    color: #FFFFFF;
+}
+.para{
+    margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+   text-align: center;
+   color: #f7931e;
+}
+
+/* About me section**************************/
+ .aboutMe{
+    position: relative;
+    top: 3%;
+    /* background-color:#1A1A1A !important; */
+    width: 100vw;
+    height:130vh;
+}   
+#aboutMeButton{
+    position: relative;
+    left: 8vw;
+}
+.subHeading{
+    position: relative;
+    top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #f7931e;
+}
+.image{
+    margin: 15% 10% 18% 16%;
+    width: 199px;
+    border: 2px solid white;
+    box-shadow: -20px -20px grey;
+}
+.paras{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    padding: 1px 40px 10px 40px;
+    text-align: center;
+    color: white;
+}
+button{
+    margin: 1% 2% 1% 15%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+.btnHeading{
+    position: relative;
+    transform: translateY(0.5vh);
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;   
+}
+
+ /* ADA Graduate section*****************/
+ .graduate{
+     padding-top: 12%;
+ }
+ .logo{
+    margin: 20% 2% 18% 2%;
+    width: 200px;
+    height: 200px;
+ }
+ .gradPara{
+     margin-top:12%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 13px;
+     font-weight: 200;
+     padding: 1px 40px 10px 40px;
+     text-align: center;
+     color: white;  
+ }
+ .greyBtn{
+     margin-top: 2%;
+     width: 65vw;
+     height: 8vh;
+     padding: 5px 30px 10px 30px;
+     border-radius: 50px;
+     border: none;
+     background: #808080;
+ }
+ .orangeBtn{
+     margin-top: -2%;
+     width: 65vw;
+     height: 8vh;
+     border-radius: 50px;
+     border: none;
+     background:  #eb5e28;
+ }
+
+ /* testimonials section */
+ .testimonials{
+    position: relative;
+    top: 5%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    /* height: 215vh; */
+}
+ .card{
+     margin: 7% 0% 15% 5%;
+    border:0;
+    background-color:#1A1A1A;
+} 
+.card-text{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+.icons{
+    margin-top: 2%;
+    font-size: 1em;
+    /* margin-left: 30px ; */
+    padding: 8px; 
+}
+.names{
+    position: relative;
+    transform: translateY(0.5vh);
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+.card-body{
+    background-color: #eb5e28;
+}
+.testiMonial{
+    margin-top: 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+}
+.col{
+    margin-top: 50px;
+}
+a{
+    color:white;
+}
+
+/* Get In Touch******************/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: 1 !important; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white !important;
+}
+.getInTouch{
+    margin-top: 30%;
+    background-color:#1A1A1A;
+    width: 100vw;
+    height: 90vh;
+}
+.getInTouch1{
+    margin-top: 5%;
+}
+.paras2{
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 1px 40px 10px 40px;
+    text-align: center;
+    color: white;
+}
+.form-control{
+ background-color: #666666;
+}
+.orangeBtn1{
+    margin: 2% 0% 0% 3%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+
+/* Footer*******************/
+.footerIcons{
+        position: relative;
+        margin-top: 30%;
+        left:40%;
+        font-size: 0.5em;
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 10px; 
+    }
+
+.copy{
+    font-family: 'Montserrat', sans-serif;
+    color:white;   
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 3%; 
+    margin-left: 14%;
+}
+ .programmer{
+    font-family: 'Montserrat', sans-serif;
+    color:#f7931e;
+    font-size: 12px;
+    font-weight: 400;
+} 
+
+/* General Classes*/
+.hide-on-mobile{
+    display: none;
+}
+
+/* ABOUT ME PAGE **************************/
+.laptopIcon{
+    margin-top: 10%;
+    margin-left: 42%;
+    font-size: 1em;
+    width: 60px;
+    height: 60px;
+    background-color: #F7931E;
+    color: black;
+    border-radius: 50%;
+    padding: 10px; 
+    text-align: center;
+} 
+.developerText{
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f7931e;
+}
+.medalIcon{
+    margin-top: 10%;
+    margin-left: 42%;
+    font-size: 1.2em;
+    width: 60px;
+    height: 60px;
+    background-color: #F7931E;
+    color: black;
+    border-radius: 50%;
+    padding: 10px; 
+    text-align: center;
+} 
+.userIcon{
+    margin-top: 10%;
+    margin-left: 42%;
+    font-size: 1.2em;
+    width: 60px;
+    height: 60px;
+    background-color: #F7931E;
+    color: black;
+    border-radius: 50%;
+    padding: 10px; 
+    text-align: center;
+}
+
+/* RESUME PAGE******************/
+.aboutMe2{
+        background-color:#1A1A1A !important;
+        width: 100vw;
+        height:350vh;
+}
+.aboutText{
+    margin-top: 12%;
+    margin-left: 0.5%;
+    font-weight: 500;
+    font-size: 20px;
+    color: #f7931e;   
+}
+.texting{
+    margin-top: 3%;
+    text-align: justify;
+}
+ .texts{
+    margin-top:5%;
+    text-align: left;
+}
+  .stars{
+    font-size: 1.6em;
+    color: #f7931e ;
+} 
+.skillsText{
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+.footer{
+    margin-top: 100%;
+} 
+.education{
+    margin:1px;
+} 
+.aboutMe3{
+    background-color:#1A1A1A !important;
+    width: 100vw;
+    height:520vh;
+}  
+/* my journey **********/
+.ADA{
+    text-align: justify;
+}
+
+
+
+
+/* --MEDIA QUERIES------------------------------------media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* // --------------------------------------------------------------Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* general styles */
+ .show-on-desktop{
+    display: block;
+}
+.hide-on-desktop{
+    display: block;
+}
+.desktop-only{
+    display: block;
+}
+.menu{
+    display: none;
+}
+
+/* social Icons******************************/
+.social-icons{
+    text-align: center;
+}
+.icons{
+    margin-top: 4%;
+}
+/* .mediaIcons{
+    position: relative;
+    right: 180px;
+    font-size: 1.3em;
+    margin-left: 20px;
+    top: 20%;
+}  */
+.NavbarIcon{
+    margin-top: 1%;
+    margin-right: 15px;
+    font-size: 1.3em;
+    width: 60px;
+    height: 60px; 
+}
+
+/*Landing page************************************/
+
+h1{
+    margin-bottom: 2%;
+    font-size: 40px;
+    font-weight: 500;
+}
+.taglineBlock{
+    margin-top: 6%;
+    width: 90vw;
+    height: 40vh;
+}
+.landingSection{
+    margin-top: 5%;
+    font-size: 160px;
+    font-weight: 200;
+}
+.para{
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: 500;
+}
+.arrow{
+    display: block;
+    margin-left: 42vw;
+    width:40px;
+    height:60px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    border: 1px solid grey;
+    padding: 1px 1px 1px 10px ;
+    color: grey;
+}
+/* About Me Section *******************************/
+/* .aboutMe{
+    position: relative;
+    top:-62%;
+    left: 75px;
+    background-color:#1A1A1A;
+    width: 90vw;
+    height: 70vh;
+}    */
+.image{
+    margin: 20% 0% 18% 2%;
+    width: 303px;
+    height: 303px;
+    box-shadow: -40px -40px grey;
+}
+.paras{
+    margin-top: 7%;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+button{
+    position: relative;
+    margin: 1% 2% 1% 30%;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+
+.btnHeading{
+    position: relative;
+    transform: translateY(0.5vh);
+    left: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;   
+}
+.orangeBtn1{
+    margin-top: 2%;
+   margin-left: 3%;
+    width: 5vw;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+    background:  #eb5e28;
+}
+
+.name{
+    position: relative;
+    top: -4.5%;
+}
+
+/* // --------------------------------------------------------------Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+
+ }
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+/* --------------------------------------------------------------Extra large devices landscape */
+ @media (min-width: 1200px) and (orientation: landscape) {
+     /* general styles */
+    .show-on-desktop{
+        display: block;
+    }
+    .hide-on-desktop{
+        display: none;
+    }
+    .desktop-only{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .mobile-only{
+        display: none;
+    }
+
+    /* social Icons******************************/
+    .social-icons{
+        text-align: center;
+    }
+    .icons{
+        margin-top: 4%;
+    }
+     .mediaIcons{
+        font-size: 0.6em;
+        margin-left: 1px;
+        margin-top: 5%;
+    } 
+    .hrLine{
+        border: white 0.5px solid;
+        opacity: 0.5;
+        width: 90vw;
+        margin-left: 2%;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: 500;
+    } 
+
+    /* Navigation*******************************/
+    .desktopNavbar{
+        position: relative;
+        left: 25%;
+        margin-top:4%;
+        display: block;
+    }
+    .nav-link{
+        color: white;
+        margin-left: 50px;
+    }
+    .navigation{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+       /* text-align: center; */
+       color: white;
+    }
+    .navigation1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+       color: white;
+    }
+    h1{ margin-top: 5%; 
+    }
+    .taglineBlock{
+        margin-top: 6%;
+        width: 90vw;
+        height: 60vh;
+    }
+    .landingSection{
+        margin-top: 5%;
+        font-size: 160px;
+        font-weight: 200;
+    }
+    .para{
+        margin-top: 5%;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .arrow{
+        display: block;
+        margin-left: 42vw;
+        width:40px;
+        height:60px;
+        font-size: 1.2em;
+        border-radius: 50px;
+        border: 1px solid grey;
+        padding: 1px 1px 1px 10px ;
+        color: grey;
+    }
+    /* About Me Section ********************************/
+    .aboutMe{
+        height: 95vh;
+        width: 90%;
+    }
+    .subHeading{
+        margin-top:8%;
+    }
+    .image{
+        margin: 20% 0% 18% 2%;
+        width: 303px;
+        height: 303px;
+        box-shadow: -40px -40px grey;
+    }
+    .paras{
+        margin-top: 7%;
+        font-size: 20px;
+        font-weight: 100;
+        color: white;
+    }
+    button{
+        margin: 1% 2% 1% 15%;
+        width: 30vw;
+        height: 8vh;
+        border-radius: 50px;
+        border: none;
+        background:  #eb5e28;
+    }
+    .btnHeading{
+        position: relative;
+        transform: translateY(0.5vh);
+        left: 0.5%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: white;   
+    }
+    .orangeBtn1{
+        margin-top: 2%;
+       margin-left: 3%;
+        width: 5vw;
+        height: 8vh;
+        border-radius: 50px;
+        border: none;
+        background:   #eb5e28;
+    }
+    .name{
+        position: relative;
+        top: -4.5%;
+    }
+
+     /* ADA Graduate section**********************************/
+     .graduate{
+       margin-bottom: 5%;
+        width: 90vw;
+    }
+    .logo{
+        margin: 20% 0% 18% 2%;
+        width: 303px;
+        height: 300px;
+     }
+     .gradPara{
+         font-size: 13px;
+         font-weight: 200;  
+     }
+     .greyBtn{
+         margin-top: 5%;
+         margin-left: 2%;
+         width: 20vw;
+         height: 8vh;
+     }
+     .orangeBtn{
+         margin-top: 5%;
+         margin-left: 2%;
+         width: 20vw;
+         height: 8vh;
+     }
+
+     /*Testimonials******************************/
+     .testimonials{
+        position: relative;
+        top: 10%;
+        left: 5%;
+        width: 90vw;
+        height: 14  0vh;
+    }
+     .card{
+        border:0;
+        background-color:#1A1A1A;
+    } 
+    .card-text{
+        text-align: center;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .icons{
+        margin-top: 2%;
+        font-size: 1em;
+        margin-left: 35px ;
+        padding: 8px; 
+    }
+    .names{
+        position: relative;
+        transform: translateY(0.5vh);
+        left: 0.5%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: white;
+    }
+    .card-body{
+        background-color: #eb5e28;
+    }
+    .testiMonial{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        text-align: center;
+        color: white;
+    }
+    .col{
+        margin-top: 50px;
+    }
+
+    /* Get In Touch *************************/
+    .getInTouch{
+        margin: 13% 0% 0% 5%;
+         width: 90vw;
+         height: 80vh;
+     }
+     .getInTouch1{
+        margin: 13% 0% 0% 5%;
+         width: 90vw;
+         height: 80vh;
+     }
+     form{
+         margin-left: 15%;
+         width:70%; 
+     }
+     .paras2{
+         font-size: 15px;
+         font-weight: 200; 
+     }
+     .orangeBtn1{
+         margin: 2% 0% 0% 1%;
+         width: 15vw;
+         height: 8vh; 
+     }
+
+     /* Footer ************************/
+     .copy{
+         font-size: 15px;
+         font-weight: 400;
+         margin-top: -1%; 
+         margin-left: 37%;
+     }
+      .programmer{
+          margin-top: 5%;
+         font-size: 14px;
+         font-weight: 400;
+      }
+      .media{
+        margin-top: 2%;
+        margin-left: 36%;
+      }
+      .footerIcons{
+          margin-top: 8%;
+        font-size: 0.6em;
+        margin-left: 1px;
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 8px;  
+      }
+
+      /* RESUME PAGE ***************************************/
+
+      .subHeading{
+          margin-bottom:5%;
+      }
+      .aboutMe2{
+        background-color:#1A1A1A !important;
+        width: 90vw;
+        height:170vh;
+    }
+    .aboutText{
+        margin: 8% 0% 5% 0%;
+        font-weight: 500;
+        font-size: 20px;
+        color: #f7931e;
+    }
+    .skill{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+    .texting{
+        margin-top: 3%;
+        text-align: left;
+        font-size: 15px;
+    }
+    .texts{
+        margin-top:5%;
+        text-align: left;
+        font-size: 15px;
+    }
+    .stars{
+        margin-top: 4%;
+        margin-left: 10% ;
+        font-size: 1.8em;
+        color: white;
+    }
+    .skillsText{
+        font-size:18px;
+        color: white;
+    }
+    .mySkills{
+        color:white;
+    }
+    .skillsDiv{
+        margin-top: 10%;
+        height: 40vh;
+    }
+    .orangeDiv{
+        background-color: #EB5E28;
+    }
+    .education{
+        margin:1px;
+    }
+    
+    /* ABOUT ME PAGE ****************************/
+    .laptopIcon{
+        margin-top: 1%;
+        margin-left: 87%;
+        font-size: 1em;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        color: black;
+    } 
+    .developerText{
+        margin-top: 7%;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .juniorText{
+        margin-top: 4%;
+        margin-right: 52%;
+        color: black;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .medalIcon{
+        font-size: 1.2em;
+        margin-top: 10%;
+        margin-left: 45%;
+    } 
+    .userIcon{
+        font-size: 1.2em;
+        margin-top: 10%;
+        margin-left: 42%;
+    }
+    .orangeDesktop{
+        background-color:#EB5E28 !important;
+        margin-top: 30px;
+    }
+    .aboutMe3{
+        background-color:#1A1A1A !important;
+        width: 100vw;
+        height: 170vh;
+    }  
+    .ADA{
+        margin-top: 15%;
+        text-align: justify;
+    }
+
+ }
+
+ /* --------------------------------------------------------------Internet Explorer */
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

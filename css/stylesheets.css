@@ -1,0 +1,719 @@
+html{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+body{
+    background: black !important;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+h1{
+    text-align: center;
+    color: #eb5e28;
+    letter-spacing: 0.2em;
+}
+h2{
+    text-align: center;
+    color: #f7931e;
+    font-size: 0.8em;
+    margin-top: 5vh;
+}
+.mediaBlock{
+    z-index: 20;
+}
+
+
+/* Navbar for mobile*******************************/
+.overlay{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:-100vw;
+    top: 0;
+    left: 0;
+    background-color: rgb(41, 40, 40);
+    overflow: hidden; 
+    transition: 0.5s; 
+  }
+
+.overlay-content ul{
+   list-style: none;
+ }
+ 
+ /*Overlay  Navigation menu on mobile**********************/
+  /* The content inside the overlay *****************/
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+  /* The navigation links inside the overlay ***/
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; 
+    transition: 0.3s; 
+    font-size: 1.2em;
+}
+
+  /* the close button on the overlay ***/ 
+.overlay .closebtn {
+    position: absolute;
+    right: 35px;
+    top: 2px;
+    font-weight: 900;
+  }
+
+ /*media icons ***/
+.icon{
+    display: inline-block;
+    font-size: 1em;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 2px;
+}
+  /* media icons ***/
+  .icon.mobile{
+    float: right;
+    color: white;
+  }
+
+ /* Hamburger navbar on mobile***/
+.menu{
+    margin-left: -5vw;
+}
+a{
+    color: white;
+}
+a:hover{
+    color:#f7931e;
+}
+.btn:hover{
+    color: #f7931e;
+    opacity: 1;
+}
+.Desktop{
+    display: none;
+}
+
+/*developer's name ***/
+.name{
+    color: #eb5e28;
+}
+/* hr line ***/
+.hrLine{
+    border-top: 1px solid grey;
+    margin: 20px;
+}
+
+
+ /* Tagline section ***/
+.tagline p{
+    font-size: 6em;
+    color:rgb(105, 102, 102);
+    font-weight: 250;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 0;
+    animation: typing 1s steps(4, end) forwards;
+    animation-delay: 0.5s;
+}
+.greeting{
+    color: white;
+    font-weight: 350;
+}
+.taglinePara{
+    color: rgb(160, 158, 158);
+    font-size: 0.7em;
+    font-weight: 550;
+}
+.taglineParagraph{
+    color:#f7931e; 
+    font-weight: 500;
+}
+ 
+/* keyframes ***/
+@keyframes mymove {
+  0%   {color:#eb5e28;}
+  50%   { color:#f7931e;}
+  100% { color: #fff;}
+}
+/* The typing effect ***/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100%}
+}
+
+.arrowDiv{
+    display: none;
+}
+
+/* my journey page ***/
+.subHeading{
+    margin-top: -5vh;
+    font-weight: 200;
+    font-size: 1.5em;
+    color:#f7931e;
+}
+/* heading */
+.heading{
+    margin-top: 5vh;
+    font-weight: 200;
+    font-size: 1.5em;
+    color:#f7931e;
+}
+
+ /* about me section */
+.aboutMeHeading{
+    margin-top: 5vh;
+    font-weight: 200;
+    font-size: 1.2em;
+    color:#f7931e;
+}
+/* grey div */
+.greyDiv{
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background:#1A1A1A;
+    margin-bottom: 5vh;
+}
+/* paragraph text sections ***/
+.aboutMeContent{
+    font-size: 14px;
+    font-weight: 250;
+    line-height: 18px;
+    text-align: justify;
+    text-size-adjust: 2px;
+    margin: 20px;
+}
+
+/* about me page ***/
+.iconDiv{
+    background-color:#f7931e ;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 20px;
+    color: #000;
+    margin-top: 20px;
+}
+
+/* resume page ***/
+.Stars{
+    font-size: 14px;
+    font-weight: 250;
+    line-height: 18px;
+    text-align: justify;
+    text-size-adjust: 2px;
+    margin: 20px;
+    color: #f7931e;
+}
+.SkillsText{
+    font-weight: 700;
+    line-height: 18px;
+    text-align: justify;
+    text-size-adjust: 2px;
+    margin: 20px;
+    color: white;
+  }
+
+/* get in touch section/page ***/
+.FormButton{
+    color: white;
+    background-color: #eb5e28;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 60vw;
+    padding: 10px;
+}
+  /* form section ***/
+.form-control{
+    background-color: rgb(209, 204, 204);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.FormDiv{
+   margin-bottom: 5vh;
+}
+
+/* footer section ***************/
+ /* footer text */
+.CopyText{
+    text-align: center;
+    font-size: 14px;
+}
+.FullName{
+    color:#f7931e;
+}
+/* MediaIcons for mobile device footer *********************/
+.mediaIcons{
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* homepage section *****************/
+/* Tagline section */
+.TaglineDiv{
+  margin-top:-10vh;
+}
+
+/* about me section *****************/
+.developerImage{
+    box-shadow: -20px -20px  rgb(119, 118, 118);
+    width: 200px;
+    border: 2px solid white;
+}
+.aboutMeDIv{
+   margin-bottom: 5vh;
+}
+.aboutEndDiv{
+   margin-bottom: -5vh;
+}
+.aboutMeButton{
+    color: white;
+    background-color: #eb5e28;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 60vw;
+    padding: 10px;
+}
+
+/*Ada graduate section */
+.Image{
+    width: 200px;
+    border: 2px solid white;
+}
+
+.GraduateButton{
+    color: white;
+    background-color: #eb5e28;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 60vw;
+    padding: 10px;
+}
+.SecondGraduateButton{
+    background-color: rgb(119, 118, 118);
+}
+
+  /* testimonal section */
+.card{
+  border: none;
+  border-radius: 0;
+  background: #eb5e28;
+}
+.card-img-top{
+  border-radius: 0;
+}
+
+.TestimonalsContent{
+  font-size: 14px;
+  font-weight: 250;
+  line-height: 18px;
+  text-align: justify;
+  text-size-adjust: 2px;
+}
+.TestimonalsContactText{
+  font-size: 12px;
+  text-align: center;
+}
+.testimonial{
+  margin-bottom: 15px;
+  margin-top: 5vh;
+}
+
+
+   /* --------------------------------------------------------------media queries */
+ 
+ /* // Extra small devices (portrait phones, less than 576px) */
+ /* // No media query for `xs` since this is the default in Bootstrap */
+ 
+ /* // -Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (orientation: landscape) { 
+ 
+   
+ }
+ 
+ /* -Medium devices (tablets or ipad) */
+ @media (min-width: 768px) {
+
+  /* body
+  {
+    zoom: 70%;
+  } */
+
+  /* navbar section*/
+  .TabletNavbar{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+  }
+   /* burger navbar */
+  .Bars{
+    margin-left: 5vw;
+  }
+
+  /*header name and hr  */
+  .name{
+    margin-top: -2vh;
+  }
+
+  /* Tagline section */
+  .TaglineDiv{
+    margin-bottom: 2vh;
+  }
+
+  /* about me section */
+  .aboutMeButton{
+    width: 30vw;
+  }
+ /* coders image */
+  .developerImage{
+    margin-bottom: 2vh;
+  } 
+  
+  /* Graduate section */
+  .GraduateButton{
+    width: 30vw;
+  }
+  .Image{
+    margin-bottom: 2vh;
+  }
+
+  /* testimonial section */
+   .testimonial-block{
+     padding: 25px 50px;
+   }
+   #TestimonalsHeading{
+    margin-top: -1vh;
+  }
+  .ContactDiv{
+    width: 20vw;
+    height: 30vh;
+  }
+  .contactInfo{
+    margin-top: 2vh;
+  }
+  /* get in touch section */
+  .FormButton{
+    width: 30vw;
+  }
+
+   /* Tagline section */
+  .Tagline p{
+    font-size: 5em;
+    animation: typing 2s steps(20, end) forwards; 
+    animation-delay: 1s;   
+ }
+}
+ 
+ /* -Large devices (ipad pro) */
+ @media (min-width: 992px) { 
+
+      /* media icons */
+  .icons{
+    margin-left: 75%;
+    margin-bottom: -5vh;
+    margin-top: 50px;
+  }
+  
+  .mobile-only{
+      display: none;
+  }
+  .Desktop{
+  display: block;
+  color: white;
+  }  
+  /* navbar desktop */
+  #myNav{
+  display: none;
+  }
+  ul.desktop-nav{
+      list-style: none;
+      text-decoration: none;
+  }     
+  /* desktop navbar */
+  .DesktopNavbar{
+    display: inline-block;
+  }
+  .nav-link{
+    color: white;
+    margin-left: 10px;
+    font-weight: 200;
+    font-size: 0.8em;
+  }
+  .nav-link:hover{
+      color: #f7931e;
+      text-shadow: 0 -1px 0 #eb5e28;
+  }    
+    /* Tagline section */
+    .TaglineDiv{
+      margin-top:5vh;
+    }
+
+    /* arrow icon  */
+  .arrow{
+    color:rgb(160, 158, 158);
+      border-radius: 50px;
+      border: 1px solid rgb(160, 158, 158);
+      width: 40px;
+      height: 60px;
+      font-size: 1.5em;
+      margin-left: 42vw;
+      font-weight: 400;
+  }
+  .arrowDiv{
+      display: block;
+      margin-top: 2vh;
+  }
+  .arrow:hover{
+    color:#f7931e;
+    border: 1px solid #f7931e;
+    text-decoration: none;
+  }
+  /* about me section */
+  .aboutMeHeading{
+    /* text-align: right; */
+    font-size: 1.4em;
+    margin-bottom: -2vh;
+    margin-left: 22vw;
+    margin-top: 5vh;
+    font-weight: 200;
+  }
+
+  .developerImage{
+    width: 230px;
+    margin-top: 5vh;
+    margin-left: -5vw;
+  } 
+
+   /* testimonial section */
+   .testimonial-block{
+    padding: 10px -15px;
+    padding-left: 15px;
+  }
+  .contactInfo{
+    margin-top: 1vh;
+  }
+
+  .ContactDiv{
+    width: 15vw;
+    height: 22vh;
+  }
+  #TestimonalsHeading{
+    margin-left: -22vw;
+    margin-top: -3vh;
+  }
+  .heading{
+    font-size: 2.1em;
+    margin-bottom: 2vh;
+  }
+  /* Ada graduate section */
+  .Image{
+    width: 260px;
+    margin-top: 3vh;
+    margin-left: -5vw;
+  }  
+  .Paratext{
+    margin-left: -5vw;
+    width: 40vw;
+  }
+  .GraduateButton{
+    width: 20vw;
+    margin-left: -15vw;
+  }
+   /* about me page */
+   .aboutEndDiv{
+    background-color: #eb5e28;
+    color: black;
+    height: auto;
+    width: 82vw;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 2.5vw;
+  }
+  .laptopIcon{
+    background-color: white;
+    margin-bottom: 20px;
+    margin-left: 5vw;
+  }
+  .JobTitle{
+    color: #000;
+    margin-left: -30vw;
+    margin-top: 4vh;
+  }
+  .aboutMeButton{
+    width: 20vw;
+    margin-left: -5vw;
+  }
+   /* journey page */
+   .subHeading{
+    margin-top: 5vh;
+  } 
+  /* get in touch section/page */
+  .FormButton{
+  width: 20vw;
+  }
+  .FormDiv{
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  background: #1A1A1A; 
+  margin-bottom: 5vh;
+  }
+   /* resume page */
+   .SkillsDiv{
+    background-color: #eb5e28;
+    color: #fff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 5vh;
+  }
+  .SkillsDiv h2 {
+    color: #fff;
+  }
+
+  .SkillsDivTwo{
+    background-color: rgb(119, 118, 118);;
+    color: #fff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 5vh;
+  }
+  .SkillsDivTwo h2 {
+    color: #fff;
+  }
+  
+  .Stars{
+    text-align: justify;
+    color: white;
+    /* margin-left: 12vw; */
+    font-size: 0.8em;
+  }
+  .SkillsText{
+    font-size: 0.7em;
+  }
+    
+ }
+ @media screen and (min-width: 1200px) {
+     
+  
+  /* media icons */
+  .icons{
+      margin-left: 65%;
+      margin-bottom: 9vh;
+  }
+
+  /* grey div */
+  .greyDiv{
+    width: 86vw;
+  }
+   
+    /* media icons on the navbar */
+  .mediaBlock{
+    margin-bottom: -40vh;
+    padding-top: 50px;
+    margin-left: 15vw;
+    }
+    /* hr line */
+  .hrLine{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  /* tagline section */
+   .Tagline p{
+    font-size: 8em;
+    animation: typing 3.5s steps(30, end) forwards; 
+    animation-delay: 1s;   
+ }
+  .taglinePara{
+    font-size: 0.9em;
+  }
+  .arrowDiv{
+      margin-top: 7vh;
+  }
+  
+  /* about me section */
+  .developerImage{
+    width: 260px;
+  }  
+  .aboutMeButton{
+    width: 15vw;
+    margin-left: -5vw;
+}
+
+  /* about me page */
+  .aboutEndDiv{
+    margin-left: 1vw;
+  }
+  .laptopIcon{
+    margin-bottom: 25px;
+    margin-left: 10vw;
+  }
+  .JobTitle{
+    margin-left: -25vw;
+    margin-top: 7vh;
+  }
+  /* I am an Ada graduate section */
+  .GraduateButton{
+    width: 15vw;
+    margin-left: -10vw;
+  }
+ 
+  /* journey page */
+  .subHeading{
+   margin-top: 5vh;
+  }
+  /* get in touch section/page */
+  .FormButton{
+    width: 15vw;
+    }
+
+    /* testimonials section */
+  .testimonial-block{
+    padding: 20px 100px;
+  }
+  .ContactDiv{
+    width: 10vw;
+    height: 10vh;
+  }
+  .testimonial{
+    margin-bottom: 8vw;
+  }
+  .TestimonialsDiv{
+    margin-bottom: 10vh;
+  }
+  .contactInfo{
+    margin-top: -0.5vh;
+    background-color: #eb5e28;
+    padding-bottom: 100px;
+  }
+  #TestimonalsHeading{
+    margin-bottom: 3vh;
+  }
+ 
+ 
+  
+ 
+   }
+  
+   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
